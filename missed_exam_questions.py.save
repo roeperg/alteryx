@@ -1,0 +1,42 @@
+#!/python311/python
+
+exam_question_dict_array = [
+{'Answers': [{'Answer': 'Empty Strings', 'Correct': False},
+{'Answer': 'OK', 'Correct': False},
+{'Answer': 'Leading/Trailing White Spaces', 'Correct': False},
+{'Answer': 'Null Values', 'Correct': True}],
+'Explanation': [''],
+'Question': 'The Results window for the Browse tool contains a color-coded data quality bar at the top of each column. What does the color code Red indicate?'},
+
+
+{'Answers': [{'Answer': 'Empty Strings', 'Correct': False},
+{'Answer': 'OK', 'Correct': False},
+{'Answer': 'Leading/Trailing White Spaces' , 'Correct': True},
+{'Answer': 'Null Values', 'Correct': False}],
+'Explanation': [''],
+'Question': 'The Results window for the Browse tool contains a color-coded data quality bar at the top of each column. What does the color code Red indicate?'},
+
+{'Answers': [{'Answer': 'Empty Strings', 'Correct': False},
+{'Answer': 'OK', 'Correct': False},
+{'Answer': 'Leading/Trailing White Spaces', 'Correct': False},
+{'Answer': 'Null Values', 'Correct': True}],
+'Explanation': [''],
+'Question': 'The Results window for the Browse tool contains a color-coded data quality bar at the top of each column. What does the color code Yellow indicate?'},
+
+{'Answers': [{'Answer': 'Empty Strings', 'Correct': True},
+{'Answer': 'OK', 'Correct': False},
+{'Answer': 'Leading/Trailing White Spaces', 'Correct': False},
+{'Answer': 'Null Values', 'Correct': False}],
+'Explanation': [''],
+'Question': 'The Results window for the Browse tool contains a color-coded data quality bar at the top of each column. What does the color code Gray indicate?'},
+
+{'Answers': [{'Answer': 'Empty Strings', 'Correct': False},
+{'Answer': 'OK', 'Correct': True},
+{'Answer': 'Leading/Trailing White Spaces' , 'Correct': False},
+{'Answer': 'Null Values', 'Correct': False}],
+'Explanation': [''],
+'Question': 'The Results window for the Browse tool contains a color-coded data quality bar at the top of each column. What does the color code Green indicate?'},
+
+
+]
+
