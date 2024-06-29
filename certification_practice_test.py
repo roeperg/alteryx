@@ -5,8 +5,13 @@
 #c2f1f5
 #e4e6e7
 
+
+from subprocess import Popen
+from tkinter import scrolledtext, ttk
 import argparse
+import configparser
 import cv2
+from PIL import Image
 import os
 import pathlib
 import random
@@ -15,15 +20,8 @@ import sqlite3
 import sys
 import textwrap
 import time
+#import tkinter as tk
 import wx
-from subprocess import Popen
-
-
-import configparser
-import os
-import tkinter as tk
-from tkinter import scrolledtext, ttk
-
 
 
 
@@ -45,7 +43,7 @@ class Main_Window(wx.Frame):
 		self.SetBackgroundColour(self.background_color)
 		self.bullets = "ABCDEFGH"
 		self.crlf = chr(10)+chr(13)
-		self.randomize = True
+		self.randomize = False  #True
 		self.button_size = (200,20)
 
 		font1 = wx.Font(10, family = wx.DECORATIVE, style = 0, weight = 90,underline = False, faceName ="", encoding = wx.FONTENCODING_DEFAULT)
@@ -64,11 +62,12 @@ class Main_Window(wx.Frame):
 				tic2.SetLabel(f"{count}")
 				tic2.SetFont(font1)
 				tic2.SetBackgroundColour(self.background_color)
-
 				count += 50
+		self.last_row_count = 0
+		self.log_level = 0
 		self.answered_questions = 0
 		self.question_number = 0
-		self.question_header = wx.StaticText(self, name='question_header', style = wx.BORDER_DOUBLE | wx.ALIGN_CENTER| wx.ST_NO_AUTORESIZE, size=(650,30), pos=(40,20))
+		self.question_header = wx.StaticText(self, name='question_header', style = wx.BORDER_DOUBLE | wx.ALIGN_CENTER| wx.ST_NO_AUTORESIZE, size=(350,30), pos=(40,20))
 		self.question_header.SetLabel("Question")
 		self.question_header.SetFont(font3)
 		self.question_header.SetBackgroundColour(self.background_color)
@@ -94,7 +93,7 @@ class Main_Window(wx.Frame):
 
 		checkboxy = 100
 		for foo in self.bullets:
-			self.checkboxes[foo] = wx.CheckBox(self, -1, label= " "*120, size=(175,25), pos=(900,checkboxy))
+			self.checkboxes[foo] = wx.CheckBox(self, -1, label= " "*120, size=(175,75), pos=(900,checkboxy))
 			checkboxy += 25
 
 		##  Buttons
@@ -129,11 +128,14 @@ class Main_Window(wx.Frame):
 
 		self.questions = []
 
-		self.max_questions = 10
+		self.max_questions = 100
 		self.debug_level = 0
 		self.review = False
-		self.family = arguments.family
-		
+		if arguments.family:	
+			self.family = arguments.family
+		else:
+			self.family = 'Alteryx Advanced Desktop'
+			
 		if arguments.question_count:
 			self.max_questions = arguments.question_count
 		self.number_of_questions.ChangeValue(str(self.max_questions))
@@ -141,10 +143,15 @@ class Main_Window(wx.Frame):
 		if arguments.debug_level:
 			self.debug_level = arguments.debug_level
 
+		if arguments.qid:
+			self.target_qid = arguments.qid
+		else:
+			self.target_qid = 0
+
 		if arguments.review_missed_questions:
 			self.review = True
 
-
+		self.update_user("Initialized", LOGLEVEL=1)
 		self.ResetBoard(None)
 
 	##########################################################################################
@@ -170,18 +177,26 @@ class Main_Window(wx.Frame):
 		self.question_dict[0] = []
 
 		self.question_id_array = []
-		self.max_questions = 10
+		self.max_questions = 100
 
-		inq = f"select qid from QUESTIONS where family = '{self.family}' order by RANDOM() limit {self.max_questions};"
-		if self.review:
-			inq = f"select qid from QUESTIONS where family = '{self.family}' and answered_correctly = False order by RANDOM();"
+		if self.randomize:
+			inq = f"select qid from QUESTIONS where family = '{self.family}' order by RANDOM() limit {self.max_questions}"
+			if self.review:
+				inq = f"select qid from QUESTIONS where family = '{self.family}' and answered_correctly = False order by RANDOM()"
+		else:
+			inq = f"select qid from QUESTIONS where family = '{self.family}' limit {self.max_questions}"
+			if self.review:
+				inq = f"select qid from QUESTIONS where family = '{self.family}' and answered_correctly = False"
+
+		if self.target_qid > 0:
+			inq = inq.replace(" where ", f" where qid = {self.target_qid} and ")
+			print(f"select * from questions where qid  = {self.target_qid};")
 		rows = self.cursor.execute(inq).fetchall()
 		for foo in rows:
 			self.question_id_array.append(foo[0])
 		if self.review:
 			self.max_questions = len(rows)
 			self.number_of_questions.ChangeValue(str(self.max_questions))
-
 
 		#print (self.question_id_array)
 
@@ -190,10 +205,48 @@ class Main_Window(wx.Frame):
 		self.NextQuestion(None)
 
 	##########################################################################################
+	def update_user(self, textStr, LOGLEVEL=1, TIMES=True, SUPPRESS_TIME=False):
+			if self.log_level >= LOGLEVEL:
+					currtime = time.time()
+					elapsed_time = currtime - self.last_message_time
+					if not SUPPRESS_TIME:
+						self.last_message_time = currtime
+					Msg = str(time.strftime("%d-%b-%Y %H:%M:%S", time.localtime())) + "  %-50s" % str(textStr)
+					if TIMES:
+						Msg += self.secondsToStr(elapsed_time) + " elapsed"
+					self.user_log_text += Msg + "\n"
+					print(Msg)
+
+
+	##########################################################################################
 	def ShowImage(self, photo):
 		print(f"Displaying image {photo}")
-		img = cv2.imread(photo, cv2.IMREAD_ANYCOLOR)
-		cv2.imshow("Image", img)
+		return
+		img = Image.open(photo)
+		
+		#img = cv2.imread(photo)
+		img.show()
+		#img2 = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+		#im_pil = Image.fromarray(img2)
+		#im_pil.show()
+		#img = cv2.imread(photo, cv2.IMREAD_ANYCOLOR)
+		#plt_image = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+		#imgplot = plt.imshow(plt_image)
+		
+		#cv2.imshow("Image", img)
+
+	##########################################################################################
+	def ShowExcel(self, workflow):
+		print(f"opening {workflow}")
+		cmd = [r"c:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE", f"{self.datapath}\{workflow}"]
+		print(cmd)
+		print(cmd[0])
+		print(cmd[1])
+		try:
+			Popen(cmd, shell=False, stdin=None,stdout=None, stderr=None, close_fds=True)
+		except:
+			pass
+
 
 	##########################################################################################
 	def ShowWorkflow(self, workflow):
@@ -206,41 +259,50 @@ class Main_Window(wx.Frame):
 			Popen(cmd, shell=False, stdin=None,stdout=None, stderr=None, close_fds=True)
 		except:
 			pass
-# FUNCTIONS
-# ------------------------------------------------------------------------------
 
 	##########################################################################################
 	def SplitLongLine(self, intext, WRAP=82, INDENT="    "):
-
+	
 		if intext is None:
 			return ""
-		print("\n\n", intext) # DELETE ME
-		#intext = f"{intext}{self.crlf}{self.crlf}{self.crlf}{intext}"     # DELETE ME
+	
+		intext = intext.strip()
 		lines = intext.split("\n")
-		print(f"Length of split array = {len(lines)}")  # DELETE ME
-		for foo in lines:
-			print(">>>", foo)  # DELETE ME
-		for foo in lines:
-			self.LogMessage(f"New Line 1", 3)
-			arrayed = intext.split(" ")
-			outarray = []
+	
+		outarray = []
+	
+		for g in range(len(lines)):
+			foo = lines[g]
 			temptext = ""
+			foo = foo.strip()
+			if len(foo) == 0:
+				outarray.append(" ")
+			else:
+				arrayed = foo.split(" ")
+				temptext = ""
+				outtext = ""
+				for bar in arrayed:
+					if len(temptext) + len(bar) >= WRAP:
+						outarray.append(temptext)
+						temptext = ""
+					temptext += bar + " "
+				outarray.append(temptext)
+	
+		if False:
+			longest = 0
+			longtext = ""
+			for foo in outarray:
+				if len(foo) > longest:
+					longest = len(foo)
+					longtext = foo
+				
+		self.last_row_count = len(outarray)		
+		join_string = "\n"
+		return_text = join_string.join(s for s in outarray)
+		return return_text
 
-			for bar in arrayed:
-				if len(temptext) + len(bar) > WRAP:
-					self.LogMessage(temptext, 3)
-					self.LogMessage(f"   The length of the current question line is {len(temptext)}", 3)
-					print("Adding outarray - length of temptext is", len(temptext))   # DELETE ME
-					outarray.append(temptext)
-					temptext = ""
-					self.LogMessage("Temp Text is reset", 3)
-					self.LogMessage(f"New Line 2", 3)
-				temptext += bar + " "
-			outarray.append(temptext)
-			print("\n\n", outarray) # DELETE ME
-			
-		join_string = "\n" 
-		return join_string.join(s for s in outarray)
+
+
 
 	##########################################################################################
 	def NextQuestion(self,event):
@@ -254,7 +316,7 @@ class Main_Window(wx.Frame):
 
 		self.question = {"Question":"nah", "Explanation":"None", "Answers":[]}
 		self.question_id = self.question_id_array.pop(0)
-
+		print(f"The current QID is {self.question_id}")
 		## Query for next question
 		rows = self.cursor.execute(f"select text, explanation, image_file, data_file from QUESTIONS where family = '{self.family}' and qid = {self.question_id};")
 		for foo in rows:
@@ -272,7 +334,8 @@ class Main_Window(wx.Frame):
 
 		self.question_header.SetLabel("Question %d out of %d" %(self.question_number+1,self.max_questions))
 
-		temptext = (self.SplitLongLine(self.question['Question'],WRAP=120))
+		temptext = (self.SplitLongLine(self.question['Question'],WRAP=110))
+		print(f"Last row count {self.last_row_count}")
 		self.question_text.SetLabel("\n" + 	temptext)
 
 		temp_answers = []
@@ -286,8 +349,8 @@ class Main_Window(wx.Frame):
 
 		positiony = 140
 		for bar in range(len(self.question['Answers'])):
-			#temptext = ("  %s.  %s" %(self.bullets[bar], self.SplitLongLine(temp_answers[bar]["Answer"],WRAP=62)))
-			temptext = ("  %s. %s" %(self.bullets[bar], temp_answers[bar]["Answer"]))
+			temptext = ("  %s.  %s" %(self.bullets[bar], self.SplitLongLine(temp_answers[bar]["Answer"],WRAP=42)))
+			#temptext = ("  %s. %s" %(self.bullets[bar], temp_answers[bar]["Answer"]))
 			lines = int(len(temptext) / 60)
 			newheight = 20 + lines * 17
 
@@ -312,9 +375,20 @@ class Main_Window(wx.Frame):
 				fullpath = os.path.join(self.imagepath, self.question['Image'])
 				self.ShowImage(fullpath)
 
+		if 'Data' in self.question.keys():
+			print("Data file ", self.question['Data'])
+			if self.question['Data'] != "":
+				#excel, yxmd
+				fullpath = self.question['Data'].strip()
+				if fullpath.lower().find(".xls") > -1:
+					print(f"YXMD path {fullpath}")
+					self.ShowExcel(fullpath)
+				if fullpath.lower().find(".yxm") > -1:
+					print(f"YXMD path {fullpath}")
+					self.ShowWorkflow(fullpath)
+
 		self.question_number += 1
 
-		#self.ShowWorkflow("greggo.yxmd")
 		self.Layout()
 		self.Update()
 
@@ -480,7 +554,8 @@ if __name__ == "__main__" :
 
 	parser =  argparse.ArgumentParser(description = 'Optional app description')
 	parser.add_argument('-review_missed_questions', action='store_true', help = 'Review questions previously missed')
-	parser.add_argument('-family', type = str, required=True, help = 'Certification family, i.e. "SnowPro Core"')
+	parser.add_argument('-family', type = str, required=False, help = 'Certification family, i.e. "SnowPro Core"')
+	parser.add_argument('-qid', type = int, help = 'specific qid to target')
 	parser.add_argument('-question_count', type = int, help = '# of questions to ask')
 	parser.add_argument('-debug_level', type = int, help = 'Degug Level')
 
