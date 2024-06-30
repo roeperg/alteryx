@@ -6,23 +6,24 @@
 #e4e6e7
 
 
+#import tkinter as tk
+from PIL import Image
 from subprocess import Popen
 from tkinter import scrolledtext, ttk
 import argparse
 import configparser
 import cv2
-from PIL import Image
 import os
 import pathlib
 import random
 import re
+import signal
 import sqlite3
 import sys
 import textwrap
 import time
-#import tkinter as tk
+import win32clipboard
 import wx
-
 
 
 class Main_Window(wx.Frame):
@@ -37,15 +38,18 @@ class Main_Window(wx.Frame):
 		print(arguments.family)
 		print(arguments.review_missed_questions)
 
-		
+		self.pythonexecutable = sys.executable
+		self.image_display_path = os.path.join(os.path.dirname(__file__), "trash.py")
+
 		self.imagepath = r"c:\Greg\Alteryx\QuizImages"
 		self.datapath = r"c:\Greg\Alteryx\QuizData"
 		self.SetBackgroundColour(self.background_color)
 		self.bullets = "ABCDEFGH"
 		self.crlf = chr(10)+chr(13)
-		self.randomize = False  #True
+		self.randomize = True
 		self.button_size = (200,20)
 
+		self.open_window = 0
 		font1 = wx.Font(10, family = wx.DECORATIVE, style = 0, weight = 90,underline = False, faceName ="", encoding = wx.FONTENCODING_DEFAULT)
 		font2 = wx.Font(12, family = wx.DECORATIVE, style = 1, weight = 90,underline = False, faceName ="", encoding = wx.FONTENCODING_DEFAULT)
 		font3 = wx.Font(14, 72, 0, 90, underline = False,faceName ="")
@@ -112,6 +116,10 @@ class Main_Window(wx.Frame):
 		self.reset_exam_btn = wx.Button(self, label=" Restart Exam", name="quit", size=(self.button_size), pos=(800,700))
 		self.reset_exam_btn.Bind(wx.EVT_BUTTON, self.ResetBoard)
 
+		self.clipboard_search_btn = wx.Button(self, label="Clipboard Search", name="quit", size=(self.button_size), pos=(800,725))
+		self.clipboard_search_btn.Bind(wx.EVT_BUTTON, self.ClipboardSearch)
+
+
 		#self.show_notes = wx.CheckBox(self, -1, label= "Show Explanation if Available", pos=(100,880))
 		self.show_mistakes = wx.CheckBox(self, -1, label= "Show Wrong Answers During Test", pos=(100,700))
 		self.number_of_questions = wx.TextCtrl(self, name='message_field'
@@ -131,11 +139,11 @@ class Main_Window(wx.Frame):
 		self.max_questions = 100
 		self.debug_level = 0
 		self.review = False
-		if arguments.family:	
+		if arguments.family:
 			self.family = arguments.family
 		else:
 			self.family = 'Alteryx Advanced Desktop'
-			
+
 		if arguments.question_count:
 			self.max_questions = arguments.question_count
 		self.number_of_questions.ChangeValue(str(self.max_questions))
@@ -217,23 +225,19 @@ class Main_Window(wx.Frame):
 					self.user_log_text += Msg + "\n"
 					print(Msg)
 
-
 	##########################################################################################
 	def ShowImage(self, photo):
 		print(f"Displaying image {photo}")
-		return
-		img = Image.open(photo)
-		
-		#img = cv2.imread(photo)
-		img.show()
-		#img2 = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-		#im_pil = Image.fromarray(img2)
-		#im_pil.show()
-		#img = cv2.imread(photo, cv2.IMREAD_ANYCOLOR)
-		#plt_image = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-		#imgplot = plt.imshow(plt_image)
-		
-		#cv2.imshow("Image", img)
+
+		cmd = [self.pythonexecutable, self.image_display_path ,os.path.join(self.imagepath, photo)]
+		print(cmd)
+		print(cmd[0])
+		print(cmd[1])
+		if True:#try:
+			self.open_window = Popen(cmd, shell=False, stdin=None,stdout=None, stderr=None, close_fds=True).pid
+		if False:#except:
+			pass
+		print(self.open_window)
 
 	##########################################################################################
 	def ShowExcel(self, workflow):
@@ -262,15 +266,15 @@ class Main_Window(wx.Frame):
 
 	##########################################################################################
 	def SplitLongLine(self, intext, WRAP=82, INDENT="    "):
-	
+
 		if intext is None:
 			return ""
-	
+
 		intext = intext.strip()
 		lines = intext.split("\n")
-	
+
 		outarray = []
-	
+
 		for g in range(len(lines)):
 			foo = lines[g]
 			temptext = ""
@@ -287,7 +291,7 @@ class Main_Window(wx.Frame):
 						temptext = ""
 					temptext += bar + " "
 				outarray.append(temptext)
-	
+
 		if False:
 			longest = 0
 			longtext = ""
@@ -295,17 +299,86 @@ class Main_Window(wx.Frame):
 				if len(foo) > longest:
 					longest = len(foo)
 					longtext = foo
-				
-		self.last_row_count = len(outarray)		
+
+		self.last_row_count = len(outarray)
 		join_string = "\n"
 		return_text = join_string.join(s for s in outarray)
 		return return_text
 
 
+	##########################################################################################
+	def ClipboardSearch(self,event):
+		print("WE ARE SEARCHING FROM CLIPBOARD") # DELETE ME
+		self.answer_key = []
+		self.explanation = []
+		self.ResetAnswerKey()
+		self.ResetCheckboxes()
+
+		# get clipboard data
+		win32clipboard.OpenClipboard()
+		target = win32clipboard.GetClipboardData()
+		win32clipboard.CloseClipboard()
+
+		self.question = {"Question":"nah", "Explanation":"None", "Answers":[]}
+		## Query for next question
+		rows = self.cursor.execute(f"select qid, text, explanation from questions where family = '{self.family}' and lower(text) like lower('%' || '{target}' || '%')")
+
+		for foo in rows:
+			self.local_question_id = foo[0]
+			self.question["Question"] = foo[1]
+			self.question["Explanation"] = foo[2]
+		print("Question ID = ", self.question_id)
+
+		## Query for answers
+		aqry = f"select text, correct from ANSWERS where qid = {self.local_question_id} and correct = True;"
+		rows = self.cursor.execute(aqry)
+		for foo in rows:
+			print(foo)
+			self.question["Answers"].append({"Answer":foo[0], "Correct":foo[1]})
+
+		temptext = (self.SplitLongLine(self.question['Question'],WRAP=110))
+		print(f"Last row count {self.last_row_count}")
+		self.question_text.SetLabel("\n" + 	temptext)
+
+		temp_answers = []
+		for bar in self.question['Answers']:
+			temp_answers.append(bar)
+
+		for foo in self.bullets:
+			self.HideCheckbox(foo)
+
+		positiony = 140
+		for bar in range(len(self.question['Answers'])):
+			temptext = ("  %s.  %s" %(self.bullets[bar], self.SplitLongLine(temp_answers[bar]["Answer"],WRAP=42)))
+			#temptext = ("  %s. %s" %(self.bullets[bar], temp_answers[bar]["Answer"]))
+			lines = int(len(temptext) / 60)
+			newheight = 20 + lines * 17
+
+			self.SetCheckLabel(self.bullets[bar], temptext)
+			self.MoveCheckBox(self.bullets[bar], 750, positiony)
+			self.SizeCheckBox(self.bullets[bar], newheight)
+			positiony += newheight
+			self.ShowCheckbox(self.bullets[bar])
+
+			if temp_answers[bar]['Correct'] == "True" or temp_answers[bar]['Correct'] == 1:
+				self.answer_key.append(self.bullets[bar])
+
+		self.HideSubmitBtn()
+		self.ShowNextQuestionBtn()
+
+		self.Layout()
+		self.Update()
 
 
 	##########################################################################################
 	def NextQuestion(self,event):
+		try:
+			if self.open_window > 0:
+				os.kill(self.open_window, signal.SIGTERM)
+				self.open_window = 0
+		catch:
+			pass
+
 		if len(self.question_id_array) == 0:
 			self.ShowResults(None)
 			return
@@ -351,7 +424,7 @@ class Main_Window(wx.Frame):
 		for bar in range(len(self.question['Answers'])):
 			temptext = ("  %s.  %s" %(self.bullets[bar], self.SplitLongLine(temp_answers[bar]["Answer"],WRAP=42)))
 			#temptext = ("  %s. %s" %(self.bullets[bar], temp_answers[bar]["Answer"]))
-			lines = int(len(temptext) / 60)
+			lines = int(len(temptext) / 30)
 			newheight = 20 + lines * 17
 
 			self.SetCheckLabel(self.bullets[bar], temptext)
@@ -429,6 +502,10 @@ class Main_Window(wx.Frame):
 
 	# ------------------------------------------------------------------------------
 	def OnExit(self, event):
+		if self.open_window > 0:
+			os.kill(self.open_window, signal.SIGTERM)
+			self.open_window = 0
+
 		self.Close(True) #Close the frame
 
 	#----------------------------------------------------------------------
