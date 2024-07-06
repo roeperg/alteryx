@@ -6,25 +6,128 @@
 #e4e6e7
 
 
-#import tkinter as tk
-from PIL import Image
 from subprocess import Popen
 from tkinter import scrolledtext, ttk
 import argparse
 import configparser
 import cv2
+from PIL import Image
 import os
 import pathlib
 import random
 import re
-import signal
 import sqlite3
 import sys
 import textwrap
 import time
-import win32clipboard
+#import tkinter as tk
 import wx
+import wx.lib.scrolledpanel as scrolled
 
+class ImagePanel(scrolled.ScrolledPanel):
+    """
+    This control implements a basic image viewer. As the control is
+    resized the image is resized (aspect preserved) to fill the panel.
+
+    Methods:
+
+        Load(filename)   display the image from the given file
+        Clear()          clear the displayed image
+    """
+
+    def __init__(self, parent, id=wx.ID_ANY,
+                 pos=wx.DefaultPosition,
+                 size=wx.DefaultSize,
+                 style=wx.BORDER_SUNKEN,
+                 title='Use CTRL+Scroll Mouse Wheel To Zoom In Or Out'
+                 ):
+
+        super().__init__(parent, id, pos, size, style=style)
+
+        self.bmpImage = wx.StaticBitmap(self, wx.ID_ANY)
+        sizer = wx.BoxSizer(wx.HORIZONTAL)
+        sizer.Add(self.bmpImage, 1, wx.EXPAND, 0)
+        self.SetSizer(sizer)
+
+        self.bitmap = None  # loaded image in bitmap format
+        self.image = None   # loaded image in image format
+        self.aspect = None  # loaded image aspect ratio
+        self.zoom = 1.0     # zoom factor
+
+        self.blank = wx.Bitmap(1, 1)
+
+        self.Bind(wx.EVT_SIZE, self.OnSize)
+        self.Bind(wx.EVT_MOUSEWHEEL, self.OnMouseWheel)
+
+        self.SetupScrolling()
+        # wx.lib.inspection.InspectionTool().Show()
+
+    def OnSize(self, event):
+        """When panel is resized, scale the image to fit"""
+        self.ScaleToFit()
+        event.Skip()
+
+    def OnMouseWheel(self, event):
+        """zoom in/out on CTRL+scroll"""
+        m = wx.GetMouseState()
+
+        if m.ControlDown():
+            delta = 0.1 * event.GetWheelRotation() / event.GetWheelDelta()
+            self.zoom = max(1, self.zoom + delta)
+            self.ScaleToFit()
+
+        event.Skip()
+
+    def Load(self, file: str) -> None:
+        """Load the image file into the control for display"""
+        self.bitmap = wx.Bitmap(file, wx.BITMAP_TYPE_ANY)
+        self.image = wx.Bitmap.ConvertToImage(self.bitmap)
+        self.aspect = self.image.GetSize()[1] / self.image.GetSize()[0]
+        self.zoom = 1.0
+
+        self.bmpImage.SetBitmap(self.bitmap)
+
+        self.ScaleToFit()
+
+    def Clear(self):
+        """Set the displayed image to blank"""
+        self.bmpImage.SetBitmap(self.blank)
+        self.zoom = 1.0
+
+    def ScaleToFit(self) -> None:
+        """
+        Scale the image to fit in the container while maintaining
+        the original aspect ratio.
+        """
+        if self.image:
+
+            # get container (c) dimensions
+            cw, ch = self.GetSize()
+
+            # calculate new (n) dimensions with same aspect ratio
+            nw = cw
+            nh = int(nw * self.aspect)
+
+            # if new height is too large then recalculate sizes to fit
+            if nh > ch:
+                nh = ch
+                nw = int(nh / self.aspect)
+
+            # Apply zoom
+            nh = int(nh * self.zoom)
+            nw = int(nw * self.zoom)
+
+            # scale the image to new dimensions and display
+            image = self.image.Scale(nw, nh)
+            self.bmpImage.SetBitmap(image.ConvertToBitmap())
+            self.Layout()
+
+            if self.zoom > 1.0:
+                self.ShowScrollBars = True
+                self.SetupScrolling()
+            else:
+                self.ShowScrollBars = False
+                self.SetupScrolling()
 
 class Main_Window(wx.Frame):
 	def __init__(self, parent, title, arguments):
@@ -33,19 +136,20 @@ class Main_Window(wx.Frame):
 		self.start_time = time.time()
 		self.conn = sqlite3.connect(r'C:\Greg\dev\dev_certification_practice.db')
 		self.cursor = self.conn.cursor()
+		print(arguments.question_count)
+		print(arguments.review_missed_questions)
+		print(arguments.family)
+		print(arguments.review_missed_questions)
 
-		self.pythonexecutable = sys.executable
-		self.image_display_path = os.path.join(os.path.dirname(__file__), "trash.py")
-
+		
 		self.imagepath = r"c:\Greg\Alteryx\QuizImages"
 		self.datapath = r"c:\Greg\Alteryx\QuizData"
 		self.SetBackgroundColour(self.background_color)
 		self.bullets = "ABCDEFGH"
 		self.crlf = chr(10)+chr(13)
-		self.randomize = True
+		self.randomize = False  #True
 		self.button_size = (200,20)
 
-		self.open_window = 0
 		font1 = wx.Font(10, family = wx.DECORATIVE, style = 0, weight = 90,underline = False, faceName ="", encoding = wx.FONTENCODING_DEFAULT)
 		font2 = wx.Font(12, family = wx.DECORATIVE, style = 1, weight = 90,underline = False, faceName ="", encoding = wx.FONTENCODING_DEFAULT)
 		font3 = wx.Font(14, 72, 0, 90, underline = False,faceName ="")
@@ -112,10 +216,6 @@ class Main_Window(wx.Frame):
 		self.reset_exam_btn = wx.Button(self, label=" Restart Exam", name="quit", size=(self.button_size), pos=(800,700))
 		self.reset_exam_btn.Bind(wx.EVT_BUTTON, self.ResetBoard)
 
-		self.clipboard_search_btn = wx.Button(self, label="Clipboard Search", name="quit", size=(self.button_size), pos=(800,725))
-		self.clipboard_search_btn.Bind(wx.EVT_BUTTON, self.ClipboardSearch)
-
-
 		#self.show_notes = wx.CheckBox(self, -1, label= "Show Explanation if Available", pos=(100,880))
 		self.show_mistakes = wx.CheckBox(self, -1, label= "Show Wrong Answers During Test", pos=(100,700))
 		self.number_of_questions = wx.TextCtrl(self, name='message_field'
@@ -135,11 +235,11 @@ class Main_Window(wx.Frame):
 		self.max_questions = 100
 		self.debug_level = 0
 		self.review = False
-		if arguments.family:
+		if arguments.family:	
 			self.family = arguments.family
 		else:
 			self.family = 'Alteryx Advanced Desktop'
-
+			
 		if arguments.question_count:
 			self.max_questions = arguments.question_count
 		self.number_of_questions.ChangeValue(str(self.max_questions))
@@ -154,6 +254,13 @@ class Main_Window(wx.Frame):
 
 		if arguments.review_missed_questions:
 			self.review = True
+
+		app = wx.App()
+		picframe = wx.Frame(None)
+		panel = ImagePanel(self)
+		picframe.SetSize(800, 625)
+		picframe.Show()
+		panel.Load(r'c:\Greg\Alteryx\QuizImages\AlteryxDesktopCore49.png')
 
 		self.update_user("Initialized", LOGLEVEL=1)
 		self.ResetBoard(None)
@@ -194,7 +301,6 @@ class Main_Window(wx.Frame):
 
 		if self.target_qid > 0:
 			inq = inq.replace(" where ", f" where qid = {self.target_qid} and ")
-			self.HideSubmitBtn()
 			print(f"select * from questions where qid  = {self.target_qid};")
 		rows = self.cursor.execute(inq).fetchall()
 		for foo in rows:
@@ -222,19 +328,23 @@ class Main_Window(wx.Frame):
 					self.user_log_text += Msg + "\n"
 					print(Msg)
 
+
 	##########################################################################################
 	def ShowImage(self, photo):
 		print(f"Displaying image {photo}")
+		#img = Image.open(photo)
+		
+		#img = cv2.imread(photo)
+		#img.show()
+		#cv2.imshow("Image", img)
 
-		cmd = [self.pythonexecutable, self.image_display_path ,os.path.join(self.imagepath, photo)]
-		print(cmd)
-		print(cmd[0])
-		print(cmd[1])
-		if True:#try:
-			self.open_window = Popen(cmd, shell=False, stdin=None,stdout=None, stderr=None, close_fds=True).pid
-		if False:#except:
-			pass
-		print(self.open_window)
+		#img2 = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+		#im_pil = Image.fromarray(img2)
+		#im_pil.show()
+		img = cv2.imread(photo, cv2.IMREAD_ANYCOLOR)
+		plt_image = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+		#imgplot = plt.imshow(plt_image)
+		
 
 	##########################################################################################
 	def ShowExcel(self, workflow):
@@ -262,118 +372,51 @@ class Main_Window(wx.Frame):
 			pass
 
 	##########################################################################################
-	def SplitLongLine(self, intext, WRAP=82, INDENT=""):
-
-		print(f"INDENT!!!  '{INDENT}'")
+	def SplitLongLine(self, intext, WRAP=82, INDENT="    "):
+	
 		if intext is None:
 			return ""
-
+	
 		intext = intext.strip()
 		lines = intext.split("\n")
+	
 		outarray = []
-		first_line = True
-		current_indent = ""
-		
+	
 		for g in range(len(lines)):
-			if not first_line:
-				current_indent = INDENT
-				first_line = False
 			foo = lines[g]
 			temptext = ""
 			foo = foo.strip()
 			if len(foo) == 0:
 				outarray.append(" ")
-				firstline =  False
 			else:
 				arrayed = foo.split(" ")
+				temptext = ""
 				outtext = ""
 				for bar in arrayed:
 					if len(temptext) + len(bar) >= WRAP:
-						outarray.append(current_indent + temptext)
-						temptext = INDENT
-						print("setting temptext to indent")  # DELETE ME
-					temptext += current_indent + bar + " "
-				outarray.append(current_indent + temptext)
-
-		self.last_row_count = len(outarray)
+						outarray.append(temptext)
+						temptext = ""
+					temptext += bar + " "
+				outarray.append(temptext)
+	
+		if False:
+			longest = 0
+			longtext = ""
+			for foo in outarray:
+				if len(foo) > longest:
+					longest = len(foo)
+					longtext = foo
+				
+		self.last_row_count = len(outarray)		
 		join_string = "\n"
 		return_text = join_string.join(s for s in outarray)
 		return return_text
 
 
-	##########################################################################################
-	def ClipboardSearch(self,event):
-		print("WE ARE SEARCHING FROM CLIPBOARD") # DELETE ME
-		self.answer_key = []
-		self.explanation = []
-		self.ResetAnswerKey()
-		self.ResetCheckboxes()
-
-		# get clipboard data
-		win32clipboard.OpenClipboard()
-		target = win32clipboard.GetClipboardData()
-		win32clipboard.CloseClipboard()
-
-		self.question = {"Question":"nah", "Explanation":"None", "Answers":[]}
-		## Query for next question
-		rows = self.cursor.execute(f"select qid, text, explanation from questions where family = '{self.family}' and lower(text) like lower('%' || '{target}' || '%')")
-
-		for foo in rows:
-			self.local_question_id = foo[0]
-			self.question["Question"] = foo[1]
-			self.question["Explanation"] = foo[2]
-		print("Question ID = ", self.question_id)
-
-		## Query for answers
-		aqry = f"select text, correct from ANSWERS where qid = {self.local_question_id} and correct = True;"
-		rows = self.cursor.execute(aqry)
-		for foo in rows:
-			print(foo)
-			self.question["Answers"].append({"Answer":foo[0], "Correct":foo[1]})
-
-		temptext = (self.SplitLongLine(self.question['Question'],WRAP=110))
-		print(f"Last row count {self.last_row_count}")
-		self.question_text.SetLabel("\n" + 	temptext)
-
-		temp_answers = []
-		for bar in self.question['Answers']:
-			temp_answers.append(bar)
-
-		for foo in self.bullets:
-			self.HideCheckbox(foo)
-
-		positiony = 140
-		for bar in range(len(self.question['Answers'])):
-			temptext = ("  %s.  %s" %(self.bullets[bar], self.SplitLongLine(temp_answers[bar]["Answer"],WRAP=42,INDENT='      ')))
-			#temptext = ("  %s. %s" %(self.bullets[bar], temp_answers[bar]["Answer"]))
-			lines = int(len(temptext) / 60)
-			newheight = 20 + lines * 17
-
-			self.SetCheckLabel(self.bullets[bar], temptext)
-			self.MoveCheckBox(self.bullets[bar], 750, positiony)
-			self.SizeCheckBox(self.bullets[bar], newheight)
-			positiony += newheight
-			self.ShowCheckbox(self.bullets[bar])
-
-			if temp_answers[bar]['Correct'] == "True" or temp_answers[bar]['Correct'] == 1:
-				self.answer_key.append(self.bullets[bar])
-
-		self.HideSubmitBtn()
-		self.ShowNextQuestionBtn()
-
-		self.Layout()
-		self.Update()
 
 
 	##########################################################################################
 	def NextQuestion(self,event):
-		try:
-			if self.open_window > 0:
-				os.kill(self.open_window, signal.SIGTERM)
-				self.open_window = 0
-		except:
-			pass
-
 		if len(self.question_id_array) == 0:
 			self.ShowResults(None)
 			return
@@ -409,17 +452,17 @@ class Main_Window(wx.Frame):
 		temp_answers = []
 		for bar in self.question['Answers']:
 			temp_answers.append(bar)
-		#if self.randomize:
-		#	random.shuffle(temp_answers)
+		if self.randomize:
+			random.shuffle(temp_answers)
 
 		for foo in self.bullets:
 			self.HideCheckbox(foo)
 
 		positiony = 140
 		for bar in range(len(self.question['Answers'])):
-			temptext = ("  %s.  %s" %(self.bullets[bar], self.SplitLongLine(temp_answers[bar]["Answer"],WRAP=42, INDENT='  !  ')))
+			temptext = ("  %s.  %s" %(self.bullets[bar], self.SplitLongLine(temp_answers[bar]["Answer"],WRAP=42)))
 			#temptext = ("  %s. %s" %(self.bullets[bar], temp_answers[bar]["Answer"]))
-			lines = len(temptext.split("\n"))
+			lines = int(len(temptext) / 60)
 			newheight = 20 + lines * 17
 
 			self.SetCheckLabel(self.bullets[bar], temptext)
@@ -497,12 +540,6 @@ class Main_Window(wx.Frame):
 
 	# ------------------------------------------------------------------------------
 	def OnExit(self, event):
-		if self.open_window > 0:
-			try:
-				os.kill(self.open_window, signal.SIGTERM)
-				self.open_window = 0
-			except:
-				pass
 		self.Close(True) #Close the frame
 
 	#----------------------------------------------------------------------
