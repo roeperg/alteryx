@@ -1,0 +1,4338 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="497" y="53" width="349" height="321" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 15</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="522" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="8" />
+              <Fields>
+                <Field name="Category" />
+                <Field name="Color" />
+                <Field name="State" />
+                <Field name="City" />
+                <Field name="Status" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Car</c>
+                  <c>Black</c>
+                  <c>NH</c>
+                  <c>Bedford</c>
+                  <c>Lease</c>
+                </r>
+                <r>
+                  <c>Truck</c>
+                  <c>White</c>
+                  <c>CT</c>
+                  <c>Hartford</c>
+                  <c>Lease</c>
+                </r>
+                <r>
+                  <c>Car</c>
+                  <c>Black</c>
+                  <c>NH</c>
+                  <c>Albany</c>
+                  <c>On</c>
+                </r>
+                <r>
+                  <c>Car</c>
+                  <c>Black</c>
+                  <c>CT</c>
+                  <c>Bristol</c>
+                  <c>Lease</c>
+                </r>
+                <r>
+                  <c>Truck</c>
+                  <c>White</c>
+                  <c>CT</c>
+                  <c>Fairfield</c>
+                  <c>Own</c>
+                </r>
+                <r>
+                  <c>Van</c>
+                  <c>White</c>
+                  <c>CT</c>
+                  <c>Andover</c>
+                  <c>Own</c>
+                </r>
+                <r>
+                  <c>Car</c>
+                  <c>Gray</c>
+                  <c>NH</c>
+                  <c>Bedford</c>
+                  <c>Lease</c>
+                </r>
+                <r>
+                  <c>Car</c>
+                  <c>White</c>
+                  <c>NH</c>
+                  <c>Roxbury</c>
+                  <c>Own</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+            <Position x="606" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ErrorWarn>Warn</ErrorWarn>
+              <KeyFields />
+              <DataFields>
+                <Field field="Category" selected="True" />
+                <Field field="Color" selected="False" />
+                <Field field="State" selected="False" />
+                <Field field="City" selected="False" />
+                <Field field="Status" selected="False" />
+                <Field field="*Unknown" selected="False" />
+              </DataFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="522" y="186" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="6" />
+              <Fields>
+                <Field name="First" />
+                <Field name="Last" />
+                <Field name="Address" />
+                <Field name="City" />
+                <Field name="State" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Yuki</c>
+                  <c>Sato</c>
+                  <c>4560 Evanston St</c>
+                  <c>Leeds</c>
+                  <c>OH</c>
+                </r>
+                <r>
+                  <c>Yuki</c>
+                  <c>Sato</c>
+                  <c>3940 Urban Cir</c>
+                  <c>Leeds</c>
+                  <c>MI</c>
+                </r>
+                <r>
+                  <c>Riku</c>
+                  <c>Sato</c>
+                  <c>7595 S Teller Ct</c>
+                  <c>Albany</c>
+                  <c>OH</c>
+                </r>
+                <r>
+                  <c>Yuki</c>
+                  <c>Tanaka</c>
+                  <c>143 S Perry St</c>
+                  <c>Albany</c>
+                  <c>OH</c>
+                </r>
+                <r>
+                  <c>Samir</c>
+                  <c>Sato</c>
+                  <c>467 Main Street</c>
+                  <c>Leeds</c>
+                  <c>OH</c>
+                </r>
+                <r>
+                  <c>Yuki</c>
+                  <c>Sato</c>
+                  <c>1706 Starlight Lane</c>
+                  <c>Albany</c>
+                  <c>MI</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="630" y="186" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="First" />
+                <Field field="Last" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="762" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_8468_5526e47e9671d34493161309b63d3f2b_\Engine_8468_6768bc71e24653438693bfe0bde25eb4~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="522" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="4" />
+              <Fields>
+                <Field name="ID" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>A671A</c>
+                </r>
+                <r>
+                  <c>A8A9</c>
+                </r>
+                <r>
+                  <c>A90</c>
+                </r>
+                <r>
+                  <c>A337A</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="618" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Trim([ID],&quot;A&quot;)" field="ID2" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[ID2 = Trim([ID],"A")
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="762" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_8468_5526e47e9671d34493161309b63d3f2b_\Engine_8468_8d3f8dc024949e49b4f5ace41a336a93~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="905" y="389" width="361" height="257" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Filter 101</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Filter 101</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="930" y="438" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="Data" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>zip code 73951 Starlight Street</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1050" y="438" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Left([Data], 8)" field="Formed" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Formed = Left([Data], 8)
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1182" y="438" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_21068_38cdb8e1b3b6c24d84fb0221d659bb72_\Engine_21068_be22a24c64de4b44afea27dc3736d421~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="930" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="4" />
+              <Fields>
+                <Field name="Name" />
+                <Field name="Q1" />
+                <Field name="Q2" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Allison</c>
+                  <c>30</c>
+                  <c>60</c>
+                </r>
+                <r>
+                  <c>Michael</c>
+                  <c>70</c>
+                  <c>30</c>
+                </r>
+                <r>
+                  <c>Tim</c>
+                  <c>40</c>
+                  <c>70</c>
+                </r>
+                <r>
+                  <c>Buckley</c>
+                  <c>90</c>
+                  <c>30</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1050" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Q1] + [Q2]" field="H1" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[H1 = [Q1] + [Q2]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1182" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_21068_38cdb8e1b3b6c24d84fb0221d659bb72_\Engine_21068_fabdf66260e69d4783a9943891bc99ee~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="97">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="53" y="953" width="373" height="149" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Sort</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Sort</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="82">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="78" y="1002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="6" />
+              <Fields>
+                <Field name="Value" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>100</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="83">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="246" y="1002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="Value" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Value - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="84">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="342" y="1002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_24668_7c43c861f99ee544b15adfff237081b3_\Engine_24668_3a65e4b344bc2d4bac9f841e3e40bed0~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="85">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="162" y="1002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Value" selected="True" type="V_String" size="2147483647" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="98">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="77" y="1145" width="637" height="249" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Toasters</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Toasters</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="86">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="102" y="1194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="164" />
+              <Fields>
+                <Field name="Toaster ID Number" />
+                <Field name="Type" />
+                <Field name="Cost" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>Commercial</c>
+                  <c>42 dollars</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>Toaster Oven</c>
+                  <c>96 dollars</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>Commercial</c>
+                  <c>23 dollars</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>Toaster Oven</c>
+                  <c>129 dollars</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>Toaster Oven</c>
+                  <c>105 dollars</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>26 dollars</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>Commercial</c>
+                  <c>48 dollars</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>Commercial</c>
+                  <c>51 dollars</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>Toaster Oven</c>
+                  <c>57 dollars</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>Commercial</c>
+                  <c>37 dollars</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>146 dollars</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>Commercial</c>
+                  <c>33 dollars</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>Commercial</c>
+                  <c>59 dollars</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>Commercial</c>
+                  <c>36 dollars</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>78 dollars</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>Toaster Oven</c>
+                  <c>132 dollars</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>Toaster Oven</c>
+                  <c>67 dollars</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>Toaster Oven</c>
+                  <c>85 dollars</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>150 dollars</c>
+                </r>
+                <r>
+                  <c>20</c>
+                  <c>Toaster Oven</c>
+                  <c>189 dollars</c>
+                </r>
+                <r>
+                  <c>21</c>
+                  <c>Commercial</c>
+                  <c>37 dollars</c>
+                </r>
+                <r>
+                  <c>22</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>102 dollars</c>
+                </r>
+                <r>
+                  <c>23</c>
+                  <c>Commercial</c>
+                  <c>44 dollars</c>
+                </r>
+                <r>
+                  <c>24</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>93 dollars</c>
+                </r>
+                <r>
+                  <c>25</c>
+                  <c>Toaster Oven</c>
+                  <c>134 dollars</c>
+                </r>
+                <r>
+                  <c>26</c>
+                  <c>Commercial</c>
+                  <c>45 dollars</c>
+                </r>
+                <r>
+                  <c>27</c>
+                  <c>Toaster Oven</c>
+                  <c>104 dollars</c>
+                </r>
+                <r>
+                  <c>28</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>120 dollars</c>
+                </r>
+                <r>
+                  <c>29</c>
+                  <c>Toaster Oven</c>
+                  <c>57 dollars</c>
+                </r>
+                <r>
+                  <c>30</c>
+                  <c>Toaster Oven</c>
+                  <c>141 dollars</c>
+                </r>
+                <r>
+                  <c>31</c>
+                  <c>Commercial</c>
+                  <c>42 dollars</c>
+                </r>
+                <r>
+                  <c>32</c>
+                  <c>Toaster Oven</c>
+                  <c>104 dollars</c>
+                </r>
+                <r>
+                  <c>33</c>
+                  <c>Commercial</c>
+                  <c>47 dollars</c>
+                </r>
+                <r>
+                  <c>34</c>
+                  <c>Toaster Oven</c>
+                  <c>82 dollars</c>
+                </r>
+                <r>
+                  <c>35</c>
+                  <c>Commercial</c>
+                  <c>53 dollars</c>
+                </r>
+                <r>
+                  <c>36</c>
+                  <c>Toaster Oven</c>
+                  <c>112 dollars</c>
+                </r>
+                <r>
+                  <c>37</c>
+                  <c>Commercial</c>
+                  <c>31 dollars</c>
+                </r>
+                <r>
+                  <c>38</c>
+                  <c>Commercial</c>
+                  <c>47 dollars</c>
+                </r>
+                <r>
+                  <c>39</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>181 dollars</c>
+                </r>
+                <r>
+                  <c>40</c>
+                  <c>Commercial</c>
+                  <c>58 dollars</c>
+                </r>
+                <r>
+                  <c>41</c>
+                  <c>Commercial</c>
+                  <c>35 dollars</c>
+                </r>
+                <r>
+                  <c>42</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>86 dollars</c>
+                </r>
+                <r>
+                  <c>43</c>
+                  <c>Toaster Oven</c>
+                  <c>158 dollars</c>
+                </r>
+                <r>
+                  <c>44</c>
+                  <c>Toaster Oven</c>
+                  <c>146 dollars</c>
+                </r>
+                <r>
+                  <c>45</c>
+                  <c>Toaster Oven</c>
+                  <c>53 dollars</c>
+                </r>
+                <r>
+                  <c>46</c>
+                  <c>Commercial</c>
+                  <c>20 dollars</c>
+                </r>
+                <r>
+                  <c>47</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>248 dollars</c>
+                </r>
+                <r>
+                  <c>48</c>
+                  <c>Commercial</c>
+                  <c>42 dollars</c>
+                </r>
+                <r>
+                  <c>49</c>
+                  <c>Toaster Oven</c>
+                  <c>95 dollars</c>
+                </r>
+                <r>
+                  <c>50</c>
+                  <c>Toaster Oven</c>
+                  <c>76 dollars</c>
+                </r>
+                <r>
+                  <c>51</c>
+                  <c>Commercial</c>
+                  <c>57 dollars</c>
+                </r>
+                <r>
+                  <c>52</c>
+                  <c>Commercial</c>
+                  <c>42 dollars</c>
+                </r>
+                <r>
+                  <c>53</c>
+                  <c>Toaster Oven</c>
+                  <c>72 dollars</c>
+                </r>
+                <r>
+                  <c>54</c>
+                  <c>Toaster Oven</c>
+                  <c>90 dollars</c>
+                </r>
+                <r>
+                  <c>55</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>148 dollars</c>
+                </r>
+                <r>
+                  <c>56</c>
+                  <c>Commercial</c>
+                  <c>53 dollars</c>
+                </r>
+                <r>
+                  <c>57</c>
+                  <c>Commercial</c>
+                  <c>42 dollars</c>
+                </r>
+                <r>
+                  <c>58</c>
+                  <c>Commercial</c>
+                  <c>56 dollars</c>
+                </r>
+                <r>
+                  <c>59</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>178 dollars</c>
+                </r>
+                <r>
+                  <c>60</c>
+                  <c>Commercial</c>
+                  <c>29 dollars</c>
+                </r>
+                <r>
+                  <c>61</c>
+                  <c>Toaster Oven</c>
+                  <c>128 dollars</c>
+                </r>
+                <r>
+                  <c>62</c>
+                  <c>Toaster Oven</c>
+                  <c>54 dollars</c>
+                </r>
+                <r>
+                  <c>63</c>
+                  <c>Toaster Oven</c>
+                  <c>73 dollars</c>
+                </r>
+                <r>
+                  <c>64</c>
+                  <c>Commercial</c>
+                  <c>50 dollars</c>
+                </r>
+                <r>
+                  <c>65</c>
+                  <c>Toaster Oven</c>
+                  <c>116 dollars</c>
+                </r>
+                <r>
+                  <c>66</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>146 dollars</c>
+                </r>
+                <r>
+                  <c>67</c>
+                  <c>Commercial</c>
+                  <c>42 dollars</c>
+                </r>
+                <r>
+                  <c>68</c>
+                  <c>Toaster Oven</c>
+                  <c>65 dollars</c>
+                </r>
+                <r>
+                  <c>69</c>
+                  <c>Toaster Oven</c>
+                  <c>129 dollars</c>
+                </r>
+                <r>
+                  <c>70</c>
+                  <c>Commercial</c>
+                  <c>41 dollars</c>
+                </r>
+                <r>
+                  <c>71</c>
+                  <c>Commercial</c>
+                  <c>49 dollars</c>
+                </r>
+                <r>
+                  <c>72</c>
+                  <c>Toaster Oven</c>
+                  <c>50 dollars</c>
+                </r>
+                <r>
+                  <c>73</c>
+                  <c>Commercial</c>
+                  <c>47 dollars</c>
+                </r>
+                <r>
+                  <c>74</c>
+                  <c>Commercial</c>
+                  <c>58 dollars</c>
+                </r>
+                <r>
+                  <c>75</c>
+                  <c>Commercial</c>
+                  <c>41 dollars</c>
+                </r>
+                <r>
+                  <c>76</c>
+                  <c>Toaster Oven</c>
+                  <c>38 dollars</c>
+                </r>
+                <r>
+                  <c>77</c>
+                  <c>Commercial</c>
+                  <c>34 dollars</c>
+                </r>
+                <r>
+                  <c>78</c>
+                  <c>Commercial</c>
+                  <c>50 dollars</c>
+                </r>
+                <r>
+                  <c>79</c>
+                  <c>Toaster Oven</c>
+                  <c>122 dollars</c>
+                </r>
+                <r>
+                  <c>80</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>227 dollars</c>
+                </r>
+                <r>
+                  <c>81</c>
+                  <c>Commercial</c>
+                  <c>21 dollars</c>
+                </r>
+                <r>
+                  <c>82</c>
+                  <c>Commercial</c>
+                  <c>41 dollars</c>
+                </r>
+                <r>
+                  <c>83</c>
+                  <c>Commercial</c>
+                  <c>20 dollars</c>
+                </r>
+                <r>
+                  <c>84</c>
+                  <c>Commercial</c>
+                  <c>39 dollars</c>
+                </r>
+                <r>
+                  <c>85</c>
+                  <c>Commercial</c>
+                  <c>23 dollars</c>
+                </r>
+                <r>
+                  <c>86</c>
+                  <c>Commercial</c>
+                  <c>57 dollars</c>
+                </r>
+                <r>
+                  <c>87</c>
+                  <c>Commercial</c>
+                  <c>35 dollars</c>
+                </r>
+                <r>
+                  <c>88</c>
+                  <c>Commercial</c>
+                  <c>58 dollars</c>
+                </r>
+                <r>
+                  <c>89</c>
+                  <c>Commercial</c>
+                  <c>57 dollars</c>
+                </r>
+                <r>
+                  <c>90</c>
+                  <c>Toaster Oven</c>
+                  <c>82 dollars</c>
+                </r>
+                <r>
+                  <c>91</c>
+                  <c>Commercial</c>
+                  <c>27 dollars</c>
+                </r>
+                <r>
+                  <c>92</c>
+                  <c>Commercial</c>
+                  <c>28 dollars</c>
+                </r>
+                <r>
+                  <c>93</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>164 dollars</c>
+                </r>
+                <r>
+                  <c>94</c>
+                  <c>Toaster Oven</c>
+                  <c>45 dollars</c>
+                </r>
+                <r>
+                  <c>95</c>
+                  <c>Commercial</c>
+                  <c>28 dollars</c>
+                </r>
+                <r>
+                  <c>96</c>
+                  <c>Commercial</c>
+                  <c>21 dollars</c>
+                </r>
+                <r>
+                  <c>97</c>
+                  <c>Commercial</c>
+                  <c>22 dollars</c>
+                </r>
+                <r>
+                  <c>98</c>
+                  <c>Commercial</c>
+                  <c>29 dollars</c>
+                </r>
+                <r>
+                  <c>99</c>
+                  <c>Commercial</c>
+                  <c>24 dollars</c>
+                </r>
+                <r>
+                  <c>100</c>
+                  <c>Toaster Oven</c>
+                  <c>80 dollars</c>
+                </r>
+                <r>
+                  <c>101</c>
+                  <c>Toaster Oven</c>
+                  <c>170 dollars</c>
+                </r>
+                <r>
+                  <c>102</c>
+                  <c>Toaster Oven</c>
+                  <c>112 dollars</c>
+                </r>
+                <r>
+                  <c>103</c>
+                  <c>Toaster Oven</c>
+                  <c>86 dollars</c>
+                </r>
+                <r>
+                  <c>104</c>
+                  <c>Toaster Oven</c>
+                  <c>58 dollars</c>
+                </r>
+                <r>
+                  <c>105</c>
+                  <c>Toaster Oven</c>
+                  <c>145 dollars</c>
+                </r>
+                <r>
+                  <c>106</c>
+                  <c>Commercial</c>
+                  <c>32 dollars</c>
+                </r>
+                <r>
+                  <c>107</c>
+                  <c>Toaster Oven</c>
+                  <c>79 dollars</c>
+                </r>
+                <r>
+                  <c>108</c>
+                  <c>Commercial</c>
+                  <c>51 dollars</c>
+                </r>
+                <r>
+                  <c>109</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>120 dollars</c>
+                </r>
+                <r>
+                  <c>110</c>
+                  <c>Toaster Oven</c>
+                  <c>52 dollars</c>
+                </r>
+                <r>
+                  <c>111</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>147 dollars</c>
+                </r>
+                <r>
+                  <c>112</c>
+                  <c>Commercial</c>
+                  <c>45 dollars</c>
+                </r>
+                <r>
+                  <c>113</c>
+                  <c>Toaster Oven</c>
+                  <c>116 dollars</c>
+                </r>
+                <r>
+                  <c>114</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>204 dollars</c>
+                </r>
+                <r>
+                  <c>115</c>
+                  <c>Commercial</c>
+                  <c>21 dollars</c>
+                </r>
+                <r>
+                  <c>116</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>229 dollars</c>
+                </r>
+                <r>
+                  <c>117</c>
+                  <c>Commercial</c>
+                  <c>49 dollars</c>
+                </r>
+                <r>
+                  <c>118</c>
+                  <c>Commercial</c>
+                  <c>20 dollars</c>
+                </r>
+                <r>
+                  <c>119</c>
+                  <c>Commercial</c>
+                  <c>53 dollars</c>
+                </r>
+                <r>
+                  <c>120</c>
+                  <c>Commercial</c>
+                  <c>20 dollars</c>
+                </r>
+                <r>
+                  <c>121</c>
+                  <c>Toaster Oven</c>
+                  <c>113 dollars</c>
+                </r>
+                <r>
+                  <c>122</c>
+                  <c>Commercial</c>
+                  <c>20 dollars</c>
+                </r>
+                <r>
+                  <c>123</c>
+                  <c>Commercial</c>
+                  <c>58 dollars</c>
+                </r>
+                <r>
+                  <c>124</c>
+                  <c>Commercial</c>
+                  <c>50 dollars</c>
+                </r>
+                <r>
+                  <c>125</c>
+                  <c>Toaster Oven</c>
+                  <c>135 dollars</c>
+                </r>
+                <r>
+                  <c>126</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>80 dollars</c>
+                </r>
+                <r>
+                  <c>127</c>
+                  <c>Commercial</c>
+                  <c>29 dollars</c>
+                </r>
+                <r>
+                  <c>128</c>
+                  <c>Commercial</c>
+                  <c>33 dollars</c>
+                </r>
+                <r>
+                  <c>129</c>
+                  <c>Commercial</c>
+                  <c>59 dollars</c>
+                </r>
+                <r>
+                  <c>130</c>
+                  <c>Toaster Oven</c>
+                  <c>96 dollars</c>
+                </r>
+                <r>
+                  <c>131</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>249 dollars</c>
+                </r>
+                <r>
+                  <c>132</c>
+                  <c>Commercial</c>
+                  <c>34 dollars</c>
+                </r>
+                <r>
+                  <c>133</c>
+                  <c>Commercial</c>
+                  <c>44 dollars</c>
+                </r>
+                <r>
+                  <c>134</c>
+                  <c>Commercial</c>
+                  <c>28 dollars</c>
+                </r>
+                <r>
+                  <c>135</c>
+                  <c>Toaster Oven</c>
+                  <c>158 dollars</c>
+                </r>
+                <r>
+                  <c>136</c>
+                  <c>Toaster Oven</c>
+                  <c>76 dollars</c>
+                </r>
+                <r>
+                  <c>137</c>
+                  <c>Toaster Oven</c>
+                  <c>48 dollars</c>
+                </r>
+                <r>
+                  <c>138</c>
+                  <c>Commercial</c>
+                  <c>22 dollars</c>
+                </r>
+                <r>
+                  <c>139</c>
+                  <c>Commercial</c>
+                  <c>26 dollars</c>
+                </r>
+                <r>
+                  <c>140</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>197 dollars</c>
+                </r>
+                <r>
+                  <c>141</c>
+                  <c>Toaster Oven</c>
+                  <c>42 dollars</c>
+                </r>
+                <r>
+                  <c>142</c>
+                  <c>Commercial</c>
+                  <c>40 dollars</c>
+                </r>
+                <r>
+                  <c>143</c>
+                  <c>Toaster Oven</c>
+                  <c>112 dollars</c>
+                </r>
+                <r>
+                  <c>144</c>
+                  <c>Commercial</c>
+                  <c>33 dollars</c>
+                </r>
+                <r>
+                  <c>145</c>
+                  <c>Commercial</c>
+                  <c>42 dollars</c>
+                </r>
+                <r>
+                  <c>146</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>237 dollars</c>
+                </r>
+                <r>
+                  <c>147</c>
+                  <c>Commercial</c>
+                  <c>52 dollars</c>
+                </r>
+                <r>
+                  <c>148</c>
+                  <c>Commercial</c>
+                  <c>34 dollars</c>
+                </r>
+                <r>
+                  <c>149</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>193 dollars</c>
+                </r>
+                <r>
+                  <c>150</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>150 dollars</c>
+                </r>
+                <r>
+                  <c>151</c>
+                  <c>Commercial</c>
+                  <c>41 dollars</c>
+                </r>
+                <r>
+                  <c>152</c>
+                  <c>Toaster Oven</c>
+                  <c>151 dollars</c>
+                </r>
+                <r>
+                  <c>153</c>
+                  <c>Commercial</c>
+                  <c>20 dollars</c>
+                </r>
+                <r>
+                  <c>154</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>189 dollars</c>
+                </r>
+                <r>
+                  <c>155</c>
+                  <c>Commercial</c>
+                  <c>38 dollars</c>
+                </r>
+                <r>
+                  <c>156</c>
+                  <c>Toaster Oven</c>
+                  <c>157 dollars</c>
+                </r>
+                <r>
+                  <c>157</c>
+                  <c>Convection Toaster Oven</c>
+                  <c>166 dollars</c>
+                </r>
+                <r>
+                  <c>158</c>
+                  <c>Toaster Oven</c>
+                  <c>62 dollars</c>
+                </r>
+                <r>
+                  <c>159</c>
+                  <c>Toaster Oven</c>
+                  <c>127 dollars</c>
+                </r>
+                <r>
+                  <c>160</c>
+                  <c>Commercial</c>
+                  <c>24 dollars</c>
+                </r>
+                <r>
+                  <c>161</c>
+                  <c>Commercial</c>
+                  <c>22 dollars</c>
+                </r>
+                <r>
+                  <c>162</c>
+                  <c>Toaster Oven</c>
+                  <c>59 dollars</c>
+                </r>
+                <r>
+                  <c>163</c>
+                  <c>Toaster Oven</c>
+                  <c>108 dollars</c>
+                </r>
+                <r>
+                  <c>164</c>
+                  <c>Commercial</c>
+                  <c>28 dollars</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="87">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="306" y="1194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>Cost</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>Cost</RootName>
+              <Delimeters value=" " />
+              <NumFields value="2" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="88">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="198" y="1194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>Type</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2024-05-18 14:37:19</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>Toaster Oven</Operand>
+                  <StartDate>2024-05-18 14:37:19</StartDate>
+                  <EndDate>2024-05-18 14:37:19</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Type] = "Toaster Oven"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="89">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="510" y="1194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Cost1" action="Avg" rename="Avg_Cost1" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="90">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="402" y="1194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Cost1" selected="True" type="Double" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="91">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="630" y="1194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_24668_7c43c861f99ee544b15adfff237081b3_\Engine_24668_698d056360a05f49b28a99f89693b188~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="92">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="486" y="1278" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Cost1] * 100.45" field="Test" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Test = [Cost1] * 100.45
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="93">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="606" y="1278" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_24668_7c43c861f99ee544b15adfff237081b3_\Engine_24668_f3ad342f520c9c41ac8a795dde0afd4c~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="106">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1253" y="1349" width="229" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Data Quality Color Bar</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Data Quality Color Bar</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="104">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="1278" y="1398" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="Leading Spaces" />
+                <Field name="Null" />
+                <Field name="Good" />
+                <Field name="Empty string " />
+                <Field name="Just leading" />
+              </Fields>
+              <Data>
+                <r>
+                  <c><![CDATA[  greg leads  ]]></c>
+                  <c />
+                  <c>I am a rock</c>
+                  <c><![CDATA[ ]]></c>
+                  <c><![CDATA[  Roeper]]></c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="105">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1398" y="1398" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_25868_7ea59e5f1bea0a4c98bf3e4ce3e220bb_\Engine_25868_f0c96b9ace8dbb4c93cf2d2df71a56b5~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="103">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="89" y="1457" width="361" height="261" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>GetWord</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>GetWord</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="100">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="114" y="1506" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="Field" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Parsing with Alteryx is fun</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="101">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="234" y="1506" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="GetWord([Field], 2)" field="Value" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Value = GetWord([Field], 2)
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="102">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="354" y="1506" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_25868_7ea59e5f1bea0a4c98bf3e4ce3e220bb_\Engine_25868_5864b550ccd2744f8541cef69d350841~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="107">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="114" y="1602" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="Data" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>The best is yet to come</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="108">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="246" y="1602" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Left([Data], 5)" field="Value" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Value = Left([Data], 5)
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="109">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="366" y="1602" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_25868_7ea59e5f1bea0a4c98bf3e4ce3e220bb_\Engine_25868_5d269c0d7e15404392134790105cfa06~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="833" y="629" width="337" height="217" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 78</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="67">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="858" y="678" width="216" height="60" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Given the provided weather data file, how many records are duplicates across both the EVENT_ID and DATE fields?</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="68">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="870" y="762" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="9" />
+              <Fields>
+                <Field name="EVENT_ID" />
+                <Field name="ZONE" />
+                <Field name="DATE" />
+                <Field name="TIME" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>972435</c>
+                  <c>GUADALUPE AND DELAWARE MOUNTAINS</c>
+                  <c>6/11/2021</c>
+                  <c>12:51:00</c>
+                </r>
+                <r>
+                  <c>972435</c>
+                  <c>DAVIS MOUNTAINS</c>
+                  <c>6/11/2021</c>
+                  <c>13:30:00</c>
+                </r>
+                <r>
+                  <c>972443</c>
+                  <c>CHINATI MOUNTAINS</c>
+                  <c>6/11/2021</c>
+                  <c>14:00:00</c>
+                </r>
+                <r>
+                  <c>972439</c>
+                  <c>LOWER BREWSTER COUNTY</c>
+                  <c>6/11/2021</c>
+                  <c>16:04:00</c>
+                </r>
+                <r>
+                  <c>972458</c>
+                  <c>DAVIS MOUNTAINS</c>
+                  <c>6/20/2021</c>
+                  <c>14:03:00</c>
+                </r>
+                <r>
+                  <c>972452</c>
+                  <c>GUADALUPE AND DELAWARE MOUNTAINS</c>
+                  <c>6/20/2021</c>
+                  <c>14:51:00</c>
+                </r>
+                <r>
+                  <c>972458</c>
+                  <c>CHINATI MOUNTAINS</c>
+                  <c>6/20/2021</c>
+                  <c>15:00:00</c>
+                </r>
+                <r>
+                  <c>970217</c>
+                  <c>ZAPATA</c>
+                  <c>6/21/2021</c>
+                  <c>14:00:00</c>
+                </r>
+                <r>
+                  <c>1040639</c>
+                  <c>MONTAGUE</c>
+                  <c>6/12/2022</c>
+                  <c>12:00:00</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="69">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="966" y="762" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="EVENT_ID" />
+                <Field field="DATE" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="99">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1086" y="762" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="785" y="1145" width="373" height="385" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Data Cleansing</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Data Cleansing</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="810" y="1194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="3" />
+              <Fields>
+                <Field name="First Name" />
+                <Field name="Last Name" />
+                <Field name="Work Status" />
+                <Field name="Age" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Dolly-May</c>
+                  <c>Renfield</c>
+                  <c>employed</c>
+                  <c>62</c>
+                </r>
+                <r>
+                  <c>Randle</c>
+                  <c>David</c>
+                  <c>retired</c>
+                  <c>68</c>
+                </r>
+                <r>
+                  <c>Vincent</c>
+                  <c>Wright-Taylor</c>
+                  <c>unemployed</c>
+                  <c>47</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings>
+            <Position x="930" y="1194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"First Name","Last Name","Work Status","Age"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">True</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1050" y="1194" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_20584_02515aa32dc01b40b9040e3ce2829987_\Engine_20584_3f45d5a369e76544a0fdad3c7615a39b~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings>
+            <Position x="930" y="1278" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"First Name","Last Name","Work Status","Age"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">False</Value>
+              <Value name="Check Box (109)">True</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1050" y="1278" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_20584_02515aa32dc01b40b9040e3ce2829987_\Engine_20584_012d3c7c4d43e7478589b67e98deb405~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1050" y="1338" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">Report.csv</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Report.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="810" y="1278" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Greg\Alteryx\trash.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>trash.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="First Name" size="254" source="File: C:\Greg\Alteryx\trash.csv" type="V_String" />
+                <Field name="Last Name" size="254" source="File: C:\Greg\Alteryx\trash.csv" type="V_String" />
+                <Field name="Work Status" size="254" source="File: C:\Greg\Alteryx\trash.csv" type="V_String" />
+                <Field name="Age" size="254" source="File: C:\Greg\Alteryx\trash.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="94">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="810" y="1446" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="2" />
+              <Fields>
+                <Field name="Field1" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Value</c>
+                </r>
+                <r>
+                  <c>[Christine's Cat corner] 450-678-5555/ (M-F) 8:00-5:00</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="95">
+          <GuiSettings>
+            <Position x="942" y="1446" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Field1"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">False</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">True</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">True</Value>
+              <Value name="Check Box (77)">True</Value>
+              <Value name="Drop Down (81)">title</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="96">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1074" y="1446" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_24668_7c43c861f99ee544b15adfff237081b3_\Engine_24668_b5a13254664bc844b55771da00061c30~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="79">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="869" y="857" width="590" height="242" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Postage</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Postage</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="74">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1170" y="906" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_25716_767a409aaf17414cb78c214efdc59a42_\Engine_25716_fd1524f2face0b4e80340ca5d0a953d7~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="76">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="990" y="906" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Weight (Pounds)] &lt;= 2 THEN 0 ELSE [Weight (Pounds)] * 1.99 ENDIF" field="Newpost" size="19.6" type="FixedDecimal" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Newpost = IF [Weight (Pounds)] <= 2 THEN 0 ELSE [Weight (Pounds)] * 1.99 ENDIF
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="77">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1086" y="906" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Newpost" action="Avg" rename="Avg_Newpost" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="80">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1110" y="990" width="324" height="84" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>The given data-set contains weights and destinations for packages to be shipped. Any package under 2 pounds ships for free, and any package 2 pounds or heavier costs $1.99 per pound to ship. What is the average cost to ship the packages? (Include packages that ship for free in the average cost calculation, and round the answer to the nearest hundredth.)</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="81">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="894" y="906" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="142" />
+              <Fields>
+                <Field name="Destination" />
+                <Field name="Weight (Pounds)" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>In State</c>
+                  <c>2.36</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>4.06</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>1.82</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>3.24</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>0.09</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>0.05</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>2.43</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>2.82</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>0.52</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>1.49</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>0.57</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>5.77</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>1.11</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>0.03</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>1.97</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>2.9</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>1.91</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>4.58</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>2.2</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>0.1</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>6.39</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>1.25</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>0.81</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>7.71</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>0.37</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>6.85</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>3.56</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>4.91</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>1.67</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>0.41</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>4.52</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>1.06</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>7.57</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>4.47</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>1.91</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>2.38</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>2.76</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>2.34</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>4.04</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>1.38</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>0.83</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>5.53</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>6.85</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>1.84</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>0.43</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>1.54</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>3.65</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>0.77</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>2.71</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>1.69</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>2.86</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>0.33</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>4.93</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>1.79</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>0.96</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>6.54</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>0.17</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>5.24</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>2.94</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>6.27</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>0.67</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>3.93</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>1.08</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>5.07</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>4.48</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>3.63</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>1.1</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>4.7</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>0.56</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>3.57</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>4.76</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>2.9</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>2.06</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>6.95</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>2.28</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>0.15</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>3.75</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>2.69</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>5.55</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>7.14</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>0.38</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>0.53</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>7.69</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>0.05</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>0.26</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>0.57</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>2.13</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>4.41</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>0.89</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>0.43</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>1.82</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>7.83</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>2.7</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>1.77</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>5.39</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>7.68</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>3.08</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>2.68</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>2.46</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>1.69</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>6.03</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>0.83</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>5.63</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>5.66</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>2.72</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>5.62</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>1.07</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>0.11</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>1.35</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>0.22</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>1.5</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>1.59</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>2.68</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>5.74</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>3.98</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>0.12</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>4.4</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>3.44</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>3.64</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>0.01</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>2.6</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>0.95</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>2.73</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>1.57</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>0.04</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>2.98</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>0.95</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>1.04</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>0.43</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>1.08</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>2.8</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>0.37</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>0.08</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>6.1</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>0.47</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>2.12</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>6.22</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>1.13</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>0.78</c>
+                </r>
+                <r>
+                  <c>Domestic</c>
+                  <c>5.52</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>3.08</c>
+                </r>
+                <r>
+                  <c>In State</c>
+                  <c>1.72</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="509" y="677" width="293" height="417" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Output Files</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output Files</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="678" y="726" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">C:\Temp\-2015.csv</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="True" />
+              <MultiFileType>Prefix</MultiFileType>
+              <MultiFileField>Field Category</MultiFileField>
+              <KeepField value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>-2015.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="534" y="726" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="9" />
+              <Fields>
+                <Field name="Field Category" />
+                <Field name="Sales" />
+                <Field name="Rreturns" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Sales</c>
+                  <c>10000</c>
+                  <c>2500</c>
+                </r>
+                <r>
+                  <c>Technical</c>
+                  <c>2500</c>
+                  <c>12000</c>
+                </r>
+                <r>
+                  <c>Engineering</c>
+                  <c>-5000</c>
+                  <c>21500</c>
+                </r>
+                <r>
+                  <c>Sales</c>
+                  <c>-12500</c>
+                  <c>31000</c>
+                </r>
+                <r>
+                  <c>Technical</c>
+                  <c>0</c>
+                  <c>25000</c>
+                </r>
+                <r>
+                  <c>Engineering</c>
+                  <c>12500</c>
+                  <c>31000</c>
+                </r>
+                <r>
+                  <c>Sales</c>
+                  <c>25000</c>
+                  <c>25001</c>
+                </r>
+                <r>
+                  <c>Technical</c>
+                  <c>37500</c>
+                  <c>31000</c>
+                </r>
+                <r>
+                  <c>Engineering</c>
+                  <c>50000</c>
+                  <c>25002</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="678" y="810" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">_Report.csv</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="True" />
+              <MultiFileType>Suffix</MultiFileType>
+              <MultiFileField>Field Category</MultiFileField>
+              <KeepField value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>_Report.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="534" y="810" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="9" />
+              <Fields>
+                <Field name="Field Category" />
+                <Field name="Sales" />
+                <Field name="Rreturns" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Finance</c>
+                  <c>10000</c>
+                  <c>2500</c>
+                </r>
+                <r>
+                  <c>Accounting</c>
+                  <c>2500</c>
+                  <c>12000</c>
+                </r>
+                <r>
+                  <c>2019</c>
+                  <c>-5000</c>
+                  <c>21500</c>
+                </r>
+                <r>
+                  <c>Finance</c>
+                  <c>-12500</c>
+                  <c>31000</c>
+                </r>
+                <r>
+                  <c>Accounting</c>
+                  <c>0</c>
+                  <c>25000</c>
+                </r>
+                <r>
+                  <c>2019</c>
+                  <c>12500</c>
+                  <c>31000</c>
+                </r>
+                <r>
+                  <c>Finance</c>
+                  <c>25000</c>
+                  <c>25001</c>
+                </r>
+                <r>
+                  <c>Accounting</c>
+                  <c>37500</c>
+                  <c>31000</c>
+                </r>
+                <r>
+                  <c>2019</c>
+                  <c>50000</c>
+                  <c>25002</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="70">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="678" y="978" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">C:\Greg\Alteryx\append_this.xlsx|||Sheet1</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <UNCLocal>False</UNCLocal>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>Append</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>append_this.xlsx
+Query=Sheet1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="71">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="534" y="918" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="9" />
+              <Fields>
+                <Field name="Field Category" />
+                <Field name="Sales" />
+                <Field name="Rreturns" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Finance</c>
+                  <c>10000</c>
+                  <c>2500</c>
+                </r>
+                <r>
+                  <c>Accounting</c>
+                  <c>2500</c>
+                  <c>12000</c>
+                </r>
+                <r>
+                  <c>2019</c>
+                  <c>-5000</c>
+                  <c>21500</c>
+                </r>
+                <r>
+                  <c>Finance</c>
+                  <c>-12500</c>
+                  <c>31000</c>
+                </r>
+                <r>
+                  <c>Accounting</c>
+                  <c>0</c>
+                  <c>25000</c>
+                </r>
+                <r>
+                  <c>2019</c>
+                  <c>12500</c>
+                  <c>31000</c>
+                </r>
+                <r>
+                  <c>Finance</c>
+                  <c>25000</c>
+                  <c>25001</c>
+                </r>
+                <r>
+                  <c>Accounting</c>
+                  <c>37500</c>
+                  <c>31000</c>
+                </r>
+                <r>
+                  <c>2019</c>
+                  <c>50000</c>
+                  <c>25002</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="72">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="678" y="918" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">C:\Greg\Alteryx\append_this.xlsx|||Sheet2|||A15</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <UNCLocal>False</UNCLocal>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>Overwrite</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="497" y="413" width="325" height="221" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 43</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="534" y="462" width="228" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Which expression in the custom filter of the Filter tool will convert the following input to the output?</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="522" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="7" />
+              <Fields>
+                <Field name="Region" />
+                <Field name="Total" />
+                <Field name="Date" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Aragon</c>
+                  <c>75</c>
+                  <c>2022-02-03</c>
+                </r>
+                <r>
+                  <c>Aragon</c>
+                  <c>27</c>
+                  <c>2022-02-05</c>
+                </r>
+                <r>
+                  <c>Canary Islands</c>
+                  <c>88</c>
+                  <c>2022-06-08</c>
+                </r>
+                <r>
+                  <c>Valencia</c>
+                  <c>34</c>
+                  <c>2022-03-31</c>
+                </r>
+                <r>
+                  <c>Balearic Islands</c>
+                  <c>45</c>
+                  <c>2022-05-19</c>
+                </r>
+                <r>
+                  <c>Madrid</c>
+                  <c>33</c>
+                  <c>2022-03-07</c>
+                </r>
+                <r>
+                  <c>Valencia</c>
+                  <c>90</c>
+                  <c>2022-04-13</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="738" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_22040_820e1a49ca77194ba0b18fd680883e5d_\Engine_22040_7f6eaf8b38575f499fa34b55a793b74e~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="630" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Date] &gt;= "2022-01-01" AND [Date] &lt;= "2022-03-31" AND [Total] &gt; 45</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText><![CDATA[filter
+]]></AnnotationText>
+              <DefaultAnnotationText>[Date] &gt;= "2022-01-01" AND [Date] &lt;= "2022-03-31" AND [Total] &gt; 45</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="53" y="353" width="325" height="177" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 39</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="78" y="414" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="7" />
+              <Fields>
+                <Field name="Region" />
+                <Field name="Total" />
+                <Field name="Category" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Aragon</c>
+                  <c>75</c>
+                  <c>City</c>
+                </r>
+                <r>
+                  <c>Aragon</c>
+                  <c>27</c>
+                  <c>Rural</c>
+                </r>
+                <r>
+                  <c>Canary Islands</c>
+                  <c>88</c>
+                  <c>Beach</c>
+                </r>
+                <r>
+                  <c>Valencia</c>
+                  <c>34</c>
+                  <c>[Null]</c>
+                </r>
+                <r>
+                  <c>Valencia</c>
+                  <c>90</c>
+                  <c>Beach</c>
+                </r>
+                <r>
+                  <c>Balearic Islands</c>
+                  <c>45</c>
+                  <c>Beach</c>
+                </r>
+                <r>
+                  <c>Madrid</c>
+                  <c />
+                  <c>Beach</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="162" y="414" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>IsNull([Total]) OR [Total]&lt;40</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>IsNull([Total]) OR [Total]&lt;40</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings>
+            <Position x="294" y="402" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="CountRecords.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="53" y="29" width="386" height="229" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 6</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="78" y="78" width="336" height="60" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[The following data table is connected to a Unique tool with the Category, Color, and State fields selected in the configuration window. Which records are contained in the U anchor?
+]]></Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="198" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Category" />
+                <Field field="Color" />
+                <Field field="State" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="78" y="173" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="8" />
+              <Fields>
+                <Field name="Category" />
+                <Field name="Color" />
+                <Field name="State" />
+                <Field name="City" />
+                <Field name="Status" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Car</c>
+                  <c>Black</c>
+                  <c>NH</c>
+                  <c>Bedford</c>
+                  <c>Lease</c>
+                </r>
+                <r>
+                  <c>Truck</c>
+                  <c>White</c>
+                  <c>CT</c>
+                  <c>Hartford</c>
+                  <c>Lease</c>
+                </r>
+                <r>
+                  <c>Car</c>
+                  <c>Black</c>
+                  <c>NH</c>
+                  <c>Albany</c>
+                  <c>On</c>
+                </r>
+                <r>
+                  <c>Car</c>
+                  <c>Black</c>
+                  <c>CT</c>
+                  <c>Bristol</c>
+                  <c>Lease</c>
+                </r>
+                <r>
+                  <c>Truck</c>
+                  <c>White</c>
+                  <c>CT</c>
+                  <c>Fairfield</c>
+                  <c>Own</c>
+                </r>
+                <r>
+                  <c>Van</c>
+                  <c>White</c>
+                  <c>CT</c>
+                  <c>Andover</c>
+                  <c>Own</c>
+                </r>
+                <r>
+                  <c>Car</c>
+                  <c>Gray</c>
+                  <c>NH</c>
+                  <c>Bedford</c>
+                  <c>Lease</c>
+                </r>
+                <r>
+                  <c>Car</c>
+                  <c>White</c>
+                  <c>NH</c>
+                  <c>Roxbury</c>
+                  <c>Own</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="330" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_6268_bf3c2167c732d84b824abab71f6599d9_\Engine_6268_98aaff5b2b02964aa8e703a2c3f45209~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="929" y="28" width="589" height="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Standard Deviation</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Standard Deviation</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1050" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Couple" selected="False" />
+                <SelectField field="Season" selected="False" />
+                <SelectField field="Age" selected="True" type="Int16" size="2" />
+                <SelectField field="DrPepperSchwartz" selected="True" type="Int16" size="2" />
+                <SelectField field="DrLoganLevkoff" selected="True" type="Int16" size="2" />
+                <SelectField field="DrJosephCilona" selected="True" type="Int16" size="2" />
+                <SelectField field="ChaplainGregEpstein" selected="True" type="Int16" size="2" />
+                <SelectField field="PastorCalvinRoberson" selected="True" type="Int16" size="2" />
+                <SelectField field="RachelDeAlto" selected="True" type="Int16" size="2" />
+                <SelectField field="DrJessicaGriffin" selected="True" type="Int16" size="2" />
+                <SelectField field="DrVivianaColes" selected="True" type="Int16" size="2" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1146" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Gender] = "F" and [Status] = "Married" and [PastorCalvinRoberson] = 1</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Gender] = "F" and [Status] = "Married" and [PastorCalvinRoberson] = 1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="966" y="77" width="324" height="96" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>The provided dataset contains data on the show "Married at First Sight" where people get married to a complete stranger.
+
+What is the standard deviation of the age of the female participants who stay married and were matched by Pastor Calvin Roberson?</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="954" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Greg\Alteryx\QuizData\MarriedPercentage.xlsx|||`Married At First Sight Dataset$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>MarriedPercentage.xlsx
+Query=`Married At First Sight Data...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Couple" source="File: C:\Greg\Alteryx\QuizData\MarriedPercentage.xlsx|||`Married At First Sight Dataset$`" type="Double" />
+                <Field name="Season" source="File: C:\Greg\Alteryx\QuizData\MarriedPercentage.xlsx|||`Married At First Sight Dataset$`" type="Double" />
+                <Field name="Name" size="255" source="File: C:\Greg\Alteryx\QuizData\MarriedPercentage.xlsx|||`Married At First Sight Dataset$`" type="V_String" />
+                <Field name="Age" source="File: C:\Greg\Alteryx\QuizData\MarriedPercentage.xlsx|||`Married At First Sight Dataset$`" type="Double" />
+                <Field name="Gender" size="255" source="File: C:\Greg\Alteryx\QuizData\MarriedPercentage.xlsx|||`Married At First Sight Dataset$`" type="V_String" />
+                <Field name="Status" size="255" source="File: C:\Greg\Alteryx\QuizData\MarriedPercentage.xlsx|||`Married At First Sight Dataset$`" type="V_String" />
+                <Field name="DrPepperSchwartz" source="File: C:\Greg\Alteryx\QuizData\MarriedPercentage.xlsx|||`Married At First Sight Dataset$`" type="Double" />
+                <Field name="DrLoganLevkoff" source="File: C:\Greg\Alteryx\QuizData\MarriedPercentage.xlsx|||`Married At First Sight Dataset$`" type="Double" />
+                <Field name="DrJosephCilona" source="File: C:\Greg\Alteryx\QuizData\MarriedPercentage.xlsx|||`Married At First Sight Dataset$`" type="Double" />
+                <Field name="ChaplainGregEpstein" source="File: C:\Greg\Alteryx\QuizData\MarriedPercentage.xlsx|||`Married At First Sight Dataset$`" type="Double" />
+                <Field name="PastorCalvinRoberson" source="File: C:\Greg\Alteryx\QuizData\MarriedPercentage.xlsx|||`Married At First Sight Dataset$`" type="Double" />
+                <Field name="RachelDeAlto" source="File: C:\Greg\Alteryx\QuizData\MarriedPercentage.xlsx|||`Married At First Sight Dataset$`" type="Double" />
+                <Field name="DrJessicaGriffin" source="File: C:\Greg\Alteryx\QuizData\MarriedPercentage.xlsx|||`Married At First Sight Dataset$`" type="Double" />
+                <Field name="DrVivianaColes" source="File: C:\Greg\Alteryx\QuizData\MarriedPercentage.xlsx|||`Married At First Sight Dataset$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1242" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Name" selected="False" />
+                <SelectField field="Gender" selected="False" />
+                <SelectField field="Status" selected="False" />
+                <SelectField field="DrPepperSchwartz" selected="False" />
+                <SelectField field="DrLoganLevkoff" selected="False" />
+                <SelectField field="DrJosephCilona" selected="False" />
+                <SelectField field="ChaplainGregEpstein" selected="False" />
+                <SelectField field="PastorCalvinRoberson" selected="False" />
+                <SelectField field="RachelDeAlto" selected="False" />
+                <SelectField field="DrJessicaGriffin" selected="False" />
+                <SelectField field="DrVivianaColes" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1338" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Age" action="StdDev" rename="StdDev_Age" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1434" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_22960_8de464fbdb768a4fa1fef4e86eea28f2_\Engine_22960_75638c47bb690340ba85b1924c115f2f~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Unique" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="82" Connection="Output" />
+      <Destination ToolID="85" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="Output" />
+      <Destination ToolID="84" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="85" Connection="Output" />
+      <Destination ToolID="83" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="86" Connection="Output" />
+      <Destination ToolID="88" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="Output" />
+      <Destination ToolID="90" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="88" Connection="True" />
+      <Destination ToolID="87" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="89" Connection="Output" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="90" Connection="Output" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="90" Connection="Output" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="Output" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="104" Connection="Output" />
+      <Destination ToolID="105" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="100" Connection="Output" />
+      <Destination ToolID="101" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="101" Connection="Output" />
+      <Destination ToolID="102" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="107" Connection="Output" />
+      <Destination ToolID="108" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="108" Connection="Output" />
+      <Destination ToolID="109" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Unique" />
+      <Destination ToolID="99" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="52" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output26" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output26" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output26" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="61" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="94" Connection="Output" />
+      <Destination ToolID="95" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="95" Connection="Output26" />
+      <Destination ToolID="96" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="81" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="True" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="True" />
+      <Destination ToolID="36" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Unique" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="True" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>cert_quiz_anwers_2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="9dec74fa-35b1-438e-b9fe-cc51215ca7e0" />
+      <Telemetry>
+        <PreviousWorkflowId value="cf68643f-8f6f-4728-ad4f-f4bab71d0131" />
+        <OriginWorkflowId value="6c4fc020-230d-43c1-8ae0-fcf5b4d2d2b6" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

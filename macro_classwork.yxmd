@@ -1,0 +1,607 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="55" y="569" width="373" height="145" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Iteration Macro</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Iteration Macro</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="80" y="630" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="Money" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>.01</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Money" source="TextInput:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="344" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_24560_49ddc75de14113429e74f936212f1dff_\Engine_24560_96dac2526400114f96d62181ad26b5c3~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings>
+            <Position x="200" y="630" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Input.Macro Input"><![CDATA[Money=Money
+]]></Value>
+              <Value name="Text Box (7)">.01</Value>
+              <Value name="Text Box (9)">30</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>penny_iterative (40)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Exit">
+              <RecordInfo>
+                <Field name="Money" source="Formula: [Money]*2" type="Double" />
+                <Field name="Day Number" source="Formula: [Engine.IterationNumber]+1" type="Int16" />
+                <Field name="Dollars" size="1073741823" source="Formula: &quot;$&quot;+ToString([Money],2,1)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Loop">
+              <RecordInfo>
+                <Field name="Money" source="Formula: [Money]*2" type="Double" />
+                <Field name="Day Number" source="Formula: [Engine.IterationNumber]+1" type="Int16" />
+                <Field name="Dollars" size="1073741823" source="Formula: &quot;$&quot;+ToString([Money],2,1)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="penny_iterative.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="305" width="410" height="233" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Batch Macro</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Batch Macro</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="79" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="6" />
+              <Fields>
+                <Field name="City" />
+                <Field name="Tax Rate" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>NYC</c>
+                  <c>1.0875</c>
+                </r>
+                <r>
+                  <c>Pasadena</c>
+                  <c>1.0825</c>
+                </r>
+                <r>
+                  <c>San Francisco</c>
+                  <c>1.085</c>
+                </r>
+                <r>
+                  <c>Allentown</c>
+                  <c>1.06</c>
+                </r>
+                <r>
+                  <c>Burlingame</c>
+                  <c>1.095</c>
+                </r>
+                <r>
+                  <c>New Bedford</c>
+                  <c>1.0625</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Tax Rates by City</AnnotationText>
+              <DefaultAnnotationText>Tax Rates by City</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="City" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Tax Rate" source="TextInput:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="380" y="438" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_24560_49ddc75de14113429e74f936212f1dff_\Engine_24560_f15e8117de814b4b803c66c95e531b94~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="80" y="438" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="11" />
+              <Fields>
+                <Field name="Order Number" />
+                <Field name="Price" />
+                <Field name="Order Date" />
+                <Field name="City" />
+                <Field name="State" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>01</c>
+                  <c>95.7</c>
+                  <c>2003-02-24</c>
+                  <c>NYC</c>
+                  <c>NY</c>
+                </r>
+                <r>
+                  <c>02</c>
+                  <c>83.26</c>
+                  <c>2003-08-25</c>
+                  <c>Pasadena</c>
+                  <c>CA</c>
+                </r>
+                <r>
+                  <c>03</c>
+                  <c>96.66</c>
+                  <c>2003-10-28</c>
+                  <c>Burlingame</c>
+                  <c>CA</c>
+                </r>
+                <r>
+                  <c>04</c>
+                  <c>98.57</c>
+                  <c>2003-12-01</c>
+                  <c>San Francisco</c>
+                  <c>CA</c>
+                </r>
+                <r>
+                  <c>05</c>
+                  <c>94.74</c>
+                  <c>2004-11-02</c>
+                  <c>Allentown</c>
+                  <c>PA</c>
+                </r>
+                <r>
+                  <c>06</c>
+                  <c>76.36</c>
+                  <c>2005-03-03</c>
+                  <c>New Bedford</c>
+                  <c>MA</c>
+                </r>
+                <r>
+                  <c>07</c>
+                  <c>99.91</c>
+                  <c>2003-02-24</c>
+                  <c>NYC</c>
+                  <c>NY</c>
+                </r>
+                <r>
+                  <c>08</c>
+                  <c>44.51</c>
+                  <c>2005-03-03</c>
+                  <c>New Bedford</c>
+                  <c>MA</c>
+                </r>
+                <r>
+                  <c>09</c>
+                  <c>86.77</c>
+                  <c>2005-03-03</c>
+                  <c>New Bedford</c>
+                  <c>MA</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>48.05</c>
+                  <c>2004-11-21</c>
+                  <c>NYC</c>
+                  <c>NY</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>100.00</c>
+                  <c>2024-05-09</c>
+                  <c>Clearwater</c>
+                  <c>FL</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Sample Dataset</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Order Number" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Price" source="TextInput:" type="Double" />
+                <Field name="Order Date" source="TextInput:" type="Date" />
+                <Field name="City" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="State" size="2147483647" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings>
+            <Position x="248" y="438" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="BatchMacroGroupBy"><![CDATA[Control=City
+Input2=City
+]]></Value>
+              <Value name="ControlParams"><![CDATA[Control Parameter (5)=Tax Rate
+]]></Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output1">
+              <RecordInfo>
+                <Field name="Order Number" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Price" source="TextInput:" type="Double" />
+                <Field name="Order Date" source="TextInput:" type="Date" />
+                <Field name="City" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="State" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Total Cost" scale="2" size="19" source="Formula: [Price]*1.05" type="FixedDecimal" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="add_tax.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="56" y="54" width="421" height="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Simple Macro</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Simple Macro</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="81" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">_externals\1\Standard Macro - Start Data.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Standard Macro - Start Data.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Employee Name" size="254" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="V_String" />
+                <Field name="Job Title" size="254" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="V_String" />
+                <Field name="Base Pay" size="254" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="V_String" />
+                <Field name="Overtime Pay" size="254" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="V_String" />
+                <Field name="Other Pay" size="254" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="V_String" />
+                <Field name="Total Pay" size="254" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="V_String" />
+                <Field name="City" size="254" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="393" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_24560_49ddc75de14113429e74f936212f1dff_\Engine_24560_6cb75b8e4129f34493957c78a972246c~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="201" y="175" width="132" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>The configuration data selection comes from the macro.  Choose the fields to be changed to text currency format.</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings>
+            <Position x="237" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>currency_formatter (23)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output2">
+              <RecordInfo>
+                <Field name="Employee Name" size="30" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="V_String" />
+                <Field name="Job Title" size="50" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="V_String" />
+                <Field name="Base Pay" size="20" source="Formula: &quot;$&quot; + ToString([_CurrentField_], 2, 1)" type="V_String" />
+                <Field name="Overtime Pay" size="20" source="Formula: &quot;$&quot; + ToString([_CurrentField_], 2, 1)" type="V_String" />
+                <Field name="Other Pay" size="20" source="Formula: &quot;$&quot; + ToString([_CurrentField_], 2, 1)" type="V_String" />
+                <Field name="Total Pay" size="20" source="Formula: &quot;$&quot; + ToString([_CurrentField_], 2, 1)" type="V_String" />
+                <Field name="City" size="13" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="currency_formatter.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="49" Connection="Macro Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Exit" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="37" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="37" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output1" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="28" Connection="To readable currency" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output2" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>macro_classwork</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="4ffe31bb-03bb-465c-99d5-12fc701bc792" />
+      <Telemetry>
+        <PreviousWorkflowId value="4b9f4a83-05fe-4706-b6a7-433ec62be91a" />
+        <OriginWorkflowId value="48f224d6-7abc-4e3a-befa-2befb791cdba" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (1)</Name>
+          <ToolId value="1" />
+          <Questions />
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="41" Selected="False" />
+        <Tool ToolId="49" Selected="True" />
+        <Tool ToolId="34" Selected="False" />
+        <Tool ToolId="37" Selected="True" />
+        <Tool ToolId="12" Selected="False" />
+        <Tool ToolId="28" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

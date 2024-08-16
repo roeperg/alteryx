@@ -1,0 +1,2445 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="90" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="68" />
+          <Fields>
+            <Field name="Couple" />
+            <Field name="Season" />
+            <Field name="Name" />
+            <Field name="Age" />
+            <Field name="Gender" />
+            <Field name="Status" />
+            <Field name="DrPepperSchwartz" />
+            <Field name="DrLoganLevkoff" />
+            <Field name="DrJosephCilona" />
+            <Field name="ChaplainGregEpstein" />
+            <Field name="PastorCalvinRoberson" />
+            <Field name="RachelDeAlto" />
+            <Field name="DrJessicaGriffin" />
+            <Field name="DrVivianaColes" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1</c>
+              <c>1</c>
+              <c>Jamie Otis-Hehner</c>
+              <c>27</c>
+              <c>F</c>
+              <c>Married</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>1</c>
+              <c>Doug Hehner</c>
+              <c>31</c>
+              <c>M</c>
+              <c>Married</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>1</c>
+              <c>Cortney Hendrix</c>
+              <c>26</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>1</c>
+              <c>Jason Carrion</c>
+              <c>27</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>1</c>
+              <c>Monet Bell</c>
+              <c>33</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>1</c>
+              <c>Vaughn Copeland</c>
+              <c>30</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>2</c>
+              <c>Jaclyn Methuen</c>
+              <c>30</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>2</c>
+              <c>Ryan Ranellone</c>
+              <c>28</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>5</c>
+              <c>2</c>
+              <c>Davina Kullar (now Davis)</c>
+              <c>34</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>5</c>
+              <c>2</c>
+              <c>Sean Varricchio</c>
+              <c>35</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>6</c>
+              <c>2</c>
+              <c>Jessica Castro</c>
+              <c>30</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>6</c>
+              <c>2</c>
+              <c>Ryan DeNino/Oehl</c>
+              <c>29</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>7</c>
+              <c>3</c>
+              <c>Vanessa Nelson</c>
+              <c>26</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>7</c>
+              <c>3</c>
+              <c>Tres Russell</c>
+              <c>27</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>8</c>
+              <c>3</c>
+              <c>Ashley Doherty</c>
+              <c>30</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>8</c>
+              <c>3</c>
+              <c>David Norton</c>
+              <c>29</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>9</c>
+              <c>3</c>
+              <c>Samantha Role</c>
+              <c>30</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>9</c>
+              <c>3</c>
+              <c>Neil Bowlus</c>
+              <c>31</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>10</c>
+              <c>4</c>
+              <c>Sonia Granados</c>
+              <c>33</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>10</c>
+              <c>4</c>
+              <c>Nick Pendergrast</c>
+              <c>32</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>11</c>
+              <c>4</c>
+              <c>Heather Seidel</c>
+              <c>32</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>11</c>
+              <c>4</c>
+              <c>Derek Schwartz</c>
+              <c>35</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>12</c>
+              <c>4</c>
+              <c>Lillian Vilchez</c>
+              <c>24</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>12</c>
+              <c>4</c>
+              <c>Tom Wilson</c>
+              <c>29</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>13</c>
+              <c>5</c>
+              <c>Danielle DeGroot</c>
+              <c>30</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>13</c>
+              <c>5</c>
+              <c>Cody Knapek</c>
+              <c>26</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>14</c>
+              <c>5</c>
+              <c>Sheila Downs</c>
+              <c>31</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>14</c>
+              <c>5</c>
+              <c>Nate Duhon</c>
+              <c>26</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>15</c>
+              <c>5</c>
+              <c>Ashley Petta</c>
+              <c>30</c>
+              <c>F</c>
+              <c>Married</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>15</c>
+              <c>5</c>
+              <c>Anthony D'Amico</c>
+              <c>33</c>
+              <c>M</c>
+              <c>Married</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>16</c>
+              <c>6</c>
+              <c>Shawniece Jackson</c>
+              <c>29</c>
+              <c>F</c>
+              <c>Married</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>16</c>
+              <c>6</c>
+              <c>Jephte Pierre</c>
+              <c>26</c>
+              <c>M</c>
+              <c>Married</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>17</c>
+              <c>6</c>
+              <c>Molly Duff</c>
+              <c>25</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>17</c>
+              <c>6</c>
+              <c>Jonathan Francetic</c>
+              <c>28</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>18</c>
+              <c>6</c>
+              <c>Jaclyn Schwartzberg</c>
+              <c>29</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>18</c>
+              <c>6</c>
+              <c>Ryan Buckley</c>
+              <c>29</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>19</c>
+              <c>7</c>
+              <c>Mia Bally</c>
+              <c>29</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>19</c>
+              <c>7</c>
+              <c>Tristan Thompson</c>
+              <c>29</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>20</c>
+              <c>7</c>
+              <c>Danielle Bergman-Dodd</c>
+              <c>30</c>
+              <c>F</c>
+              <c>Married</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>20</c>
+              <c>7</c>
+              <c>Bobby Dodd</c>
+              <c>27</c>
+              <c>M</c>
+              <c>Married</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>21</c>
+              <c>7</c>
+              <c>Amber Martorana</c>
+              <c>36</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>21</c>
+              <c>7</c>
+              <c>Dave Flaherty</c>
+              <c>37</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>22</c>
+              <c>8</c>
+              <c>Stephanie Sersen</c>
+              <c>35</c>
+              <c>F</c>
+              <c>Married</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>22</c>
+              <c>8</c>
+              <c>AJ Vollmoeller</c>
+              <c>37</c>
+              <c>M</c>
+              <c>Married</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>23</c>
+              <c>8</c>
+              <c>Jasmine McGriff</c>
+              <c>30</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>23</c>
+              <c>8</c>
+              <c>Will Guess</c>
+              <c>37</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>24</c>
+              <c>8</c>
+              <c>Kate Sisk</c>
+              <c>28</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>24</c>
+              <c>8</c>
+              <c>Luke Cuccurullo</c>
+              <c>31</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>25</c>
+              <c>8</c>
+              <c>Kristine Killingsworth</c>
+              <c>29</c>
+              <c>F</c>
+              <c>Married</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>25</c>
+              <c>8</c>
+              <c>Keith Dewar</c>
+              <c>29</c>
+              <c>M</c>
+              <c>Married</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>26</c>
+              <c>9</c>
+              <c>Iris Caldwell</c>
+              <c>27</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>26</c>
+              <c>9</c>
+              <c>Keith Manley</c>
+              <c>27</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>27</c>
+              <c>9</c>
+              <c>Elizabeth Bice</c>
+              <c>29</c>
+              <c>F</c>
+              <c>Married</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>27</c>
+              <c>9</c>
+              <c>Jamie Thompson</c>
+              <c>35</c>
+              <c>M</c>
+              <c>Married</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>28</c>
+              <c>9</c>
+              <c>Deonna McNeill</c>
+              <c>30</c>
+              <c>F</c>
+              <c>Married</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>28</c>
+              <c>9</c>
+              <c>Gregory Okotie</c>
+              <c>32</c>
+              <c>M</c>
+              <c>Married</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>29</c>
+              <c>9</c>
+              <c>Amber Bowles</c>
+              <c>27</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>29</c>
+              <c>9</c>
+              <c>Matthew Gwynne</c>
+              <c>31</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>30</c>
+              <c>10</c>
+              <c>Katie Conrad</c>
+              <c>25</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>30</c>
+              <c>10</c>
+              <c>Derek Sherman</c>
+              <c>26</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>31</c>
+              <c>10</c>
+              <c>Jessica Studer</c>
+              <c>31</c>
+              <c>F</c>
+              <c>Married</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>31</c>
+              <c>10</c>
+              <c>Austin Hurd</c>
+              <c>31</c>
+              <c>M</c>
+              <c>Married</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>32</c>
+              <c>10</c>
+              <c>Taylor Dunklin</c>
+              <c>27</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>32</c>
+              <c>10</c>
+              <c>Brandon Reid</c>
+              <c>34</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>33</c>
+              <c>10</c>
+              <c>Meka Jones</c>
+              <c>25</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>33</c>
+              <c>10</c>
+              <c>Michael Watson</c>
+              <c>31</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>34</c>
+              <c>10</c>
+              <c>Mindy Shiben</c>
+              <c>34</c>
+              <c>F</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>34</c>
+              <c>10</c>
+              <c>Zach Justice</c>
+              <c>32</c>
+              <c>M</c>
+              <c>Divorced</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="90" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Season" action="GroupBy" rename="Season" />
+            <SummarizeField field="Age" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="198" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_12972_05286be37e1b1e4ba8338f5eb285ddf5_\Engine_12972_4f3ff350b7bcca41aa84b8fe244cfac2~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="329" y="340" width="373" height="313" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Crosstab</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Crosstab</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="498" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="Age" />
+              </GroupFields>
+              <HeaderField field="Season" />
+              <DataField field="Status" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Age" source="CrossTab:Group:Concat:" type="Int32" />
+                <Field name="1" size="2048" source="CrossTab:Header:Season:1:Concat:" type="V_String" />
+                <Field name="3" size="2048" source="CrossTab:Header:Season:3:Concat:" type="V_String" />
+                <Field name="5" size="2048" source="CrossTab:Header:Season:5:Concat:" type="V_String" />
+                <Field name="6" size="2048" source="CrossTab:Header:Season:6:Concat:" type="V_String" />
+                <Field name="10" size="2048" source="CrossTab:Header:Season:10:Concat:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="618" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_12972_05286be37e1b1e4ba8338f5eb285ddf5_\Engine_12972_ab25177a78b9ab45a909874f33c94b59~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="354" y="389" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>Age</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2024-06-11 13:34:54</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <StartDate>2024-06-11 13:34:54</StartDate>
+                  <EndDate>2024-06-11 13:34:54</EndDate>
+                  <Operand>26</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Age] = 26</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="498" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="Season" />
+                <Field field="Gender" />
+              </GroupFields>
+              <HeaderField field="Season" />
+              <DataField field="Age" />
+              <Methods>
+                <Method method="Count" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Season" source="CrossTab:Group:Count:" type="Int32" />
+                <Field name="Gender" size="2147483647" source="CrossTab:Group:Count:" type="V_String" />
+                <Field name="Count_1" source="CrossTab:Header:Season:1:CountNonNulls:" type="Double" />
+                <Field name="Count_2" source="CrossTab:Header:Season:2:CountNonNulls:" type="Double" />
+                <Field name="Count_3" source="CrossTab:Header:Season:3:CountNonNulls:" type="Double" />
+                <Field name="Count_4" source="CrossTab:Header:Season:4:CountNonNulls:" type="Double" />
+                <Field name="Count_5" source="CrossTab:Header:Season:5:CountNonNulls:" type="Double" />
+                <Field name="Count_6" source="CrossTab:Header:Season:6:CountNonNulls:" type="Double" />
+                <Field name="Count_7" source="CrossTab:Header:Season:7:CountNonNulls:" type="Double" />
+                <Field name="Count_8" source="CrossTab:Header:Season:8:CountNonNulls:" type="Double" />
+                <Field name="Count_9" source="CrossTab:Header:Season:9:CountNonNulls:" type="Double" />
+                <Field name="Count_10" source="CrossTab:Header:Season:10:CountNonNulls:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="618" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_12972_05286be37e1b1e4ba8338f5eb285ddf5_\Engine_12972_a0c52b52971c4d4e83a5a5da514df653~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="498" y="570" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="DrPepperSchwartz" />
+                <Field field="PastorCalvinRoberson" />
+              </GroupFields>
+              <HeaderField field="Season" />
+              <DataField field="Status" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="DrPepperSchwartz" source="CrossTab:Group:Concat:" type="Int32" />
+                <Field name="PastorCalvinRoberson" source="CrossTab:Group:Concat:" type="Int32" />
+                <Field name="1" size="2048" source="CrossTab:Header:Season:1:Concat:" type="V_String" />
+                <Field name="3" size="2048" source="CrossTab:Header:Season:3:Concat:" type="V_String" />
+                <Field name="5" size="2048" source="CrossTab:Header:Season:5:Concat:" type="V_String" />
+                <Field name="6" size="2048" source="CrossTab:Header:Season:6:Concat:" type="V_String" />
+                <Field name="10" size="2048" source="CrossTab:Header:Season:10:Concat:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="618" y="570" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_12972_05286be37e1b1e4ba8338f5eb285ddf5_\Engine_12972_00accfbafad2e24a9b514312394b99fe~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="882" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="142" />
+          <Fields>
+            <Field name="Destination" />
+            <Field name="Weight (Pounds)" />
+          </Fields>
+          <Data>
+            <r>
+              <c>In State</c>
+              <c>2.36</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>4.06</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>1.82</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>3.24</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>0.09</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>0.05</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>2.43</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>2.82</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>0.52</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>1.49</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>0.57</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>5.77</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>1.11</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>0.03</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>1.97</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>2.9</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>1.91</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>4.58</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>2.2</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>0.1</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>6.39</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>1.25</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>0.81</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>7.71</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>0.37</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>6.85</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>3.56</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>4.91</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>1.67</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>0.41</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>4.52</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>1.06</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>7.57</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>4.47</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>1.91</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>2.38</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>2.76</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>2.34</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>4.04</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>1.38</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>0.83</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>5.53</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>6.85</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>1.84</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>0.43</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>1.54</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>3.65</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>0.77</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>2.71</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>1.69</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>2.86</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>0.33</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>4.93</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>1.79</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>0.96</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>6.54</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>0.17</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>5.24</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>2.94</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>6.27</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>0.67</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>3.93</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>1.08</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>5.07</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>4.48</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>3.63</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>1.1</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>4.7</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>0.56</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>3.57</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>4.76</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>2.9</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>2.06</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>6.95</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>2.28</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>0.15</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>3.75</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>2.69</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>5.55</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>7.14</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>0.38</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>0.53</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>7.69</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>0.05</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>0.26</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>0.57</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>2.13</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>4.41</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>0.89</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>0.43</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>1.82</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>7.83</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>2.7</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>1.77</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>5.39</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>7.68</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>3.08</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>2.68</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>2.46</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>1.69</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>6.03</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>0.83</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>5.63</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>5.66</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>2.72</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>5.62</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>1.07</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>0.11</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>1.35</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>0.22</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>1.5</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>1.59</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>2.68</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>5.74</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>3.98</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>0.12</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>4.4</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>3.44</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>3.64</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>0.01</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>2.6</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>0.95</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>2.73</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>1.57</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>0.04</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>2.98</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>0.95</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>1.04</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>0.43</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>1.08</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>2.8</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>0.37</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>0.08</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>6.1</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>0.47</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>2.12</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>6.22</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>1.13</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>0.78</c>
+            </r>
+            <r>
+              <c>Domestic</c>
+              <c>5.52</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>3.08</c>
+            </r>
+            <r>
+              <c>In State</c>
+              <c>1.72</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="1038" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="Destination" />
+          </GroupFields>
+          <HeaderField field="Destination" />
+          <DataField field="Weight (Pounds)" />
+          <Methods>
+            <Method method="Sum" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Destination" size="2147483647" source="CrossTab:Group:Sum:" type="V_String" />
+            <Field name="Domestic" source="CrossTab:Header:Destination:Domestic:Sum:" type="Double" />
+            <Field name="In_State" source="CrossTab:Header:Destination:In State:Sum:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="1038" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields />
+          <DataFields>
+            <Field field="Destination" selected="True" />
+            <Field field="Weight (Pounds)" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1158" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_12972_05286be37e1b1e4ba8338f5eb285ddf5_\Engine_12972_9b2decfb6ca63f4cb7bba06c4eb2b5ed~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1158" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_12972_05286be37e1b1e4ba8338f5eb285ddf5_\Engine_12972_56740177899c764e9677c7f70c58ceb9~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1038" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Destination" action="GroupBy" rename="Destination" />
+            <SummarizeField field="Weight (Pounds)" action="Sum" rename="Sum_Weight (Pounds)" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1158" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_12972_05286be37e1b1e4ba8338f5eb285ddf5_\Engine_12972_2d5616250e326b44bef425536bf24e60~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="473" y="28" width="229" height="264" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Transposing</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Transposing</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+            <Position x="498" y="77" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ErrorWarn>Warn</ErrorWarn>
+              <KeyFields>
+                <Field field="Age" />
+              </KeyFields>
+              <DataFields>
+                <Field field="Couple" selected="True" />
+                <Field field="Season" selected="True" />
+                <Field field="Name" selected="True" />
+                <Field field="Age" selected="False" />
+                <Field field="Gender" selected="True" />
+                <Field field="Status" selected="True" />
+                <Field field="DrPepperSchwartz" selected="True" />
+                <Field field="DrLoganLevkoff" selected="True" />
+                <Field field="DrJosephCilona" selected="True" />
+                <Field field="ChaplainGregEpstein" selected="True" />
+                <Field field="PastorCalvinRoberson" selected="True" />
+                <Field field="RachelDeAlto" selected="True" />
+                <Field field="DrJessicaGriffin" selected="True" />
+                <Field field="DrVivianaColes" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </DataFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Key=Age
+All other columns</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="618" y="78" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_12972_05286be37e1b1e4ba8338f5eb285ddf5_\Engine_12972_89b87ef463c155478b3e0872b53ea604~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+            <Position x="498" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ErrorWarn>Warn</ErrorWarn>
+              <KeyFields>
+                <Field field="Name" />
+              </KeyFields>
+              <DataFields>
+                <Field field="Couple" selected="False" />
+                <Field field="Season" selected="False" />
+                <Field field="Name" selected="False" />
+                <Field field="Age" selected="False" />
+                <Field field="Gender" selected="True" />
+                <Field field="Status" selected="True" />
+                <Field field="DrPepperSchwartz" selected="False" />
+                <Field field="DrLoganLevkoff" selected="False" />
+                <Field field="DrJosephCilona" selected="False" />
+                <Field field="ChaplainGregEpstein" selected="False" />
+                <Field field="PastorCalvinRoberson" selected="False" />
+                <Field field="RachelDeAlto" selected="False" />
+                <Field field="DrJessicaGriffin" selected="False" />
+                <Field field="DrVivianaColes" selected="False" />
+                <Field field="*Unknown" selected="False" />
+              </DataFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText><![CDATA[Key=Name
+Gender and Status
+]]></AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="618" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_12972_05286be37e1b1e4ba8338f5eb285ddf5_\Engine_12972_3747e69f1e5e3c41913db52d26c03e8c~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="False" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="True" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>crosstab_and_transpose</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="fa4cd56c-3ee0-4f8e-8a8d-831808f7032f" />
+      <Telemetry>
+        <PreviousWorkflowId value="074bf9dd-f70a-4301-a1e9-9e04b3f80227" />
+        <OriginWorkflowId value="074bf9dd-f70a-4301-a1e9-9e04b3f80227" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

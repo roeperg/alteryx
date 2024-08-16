@@ -1,0 +1,465 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Sqlite3|||"EXPERIENCES"</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <SessionReadOnly>True</SessionReadOnly>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Sqlite3
+Query="EXPERIENCES"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="EXPERIENCES.EXP_ID" size="255" source="File: odbc:DSN=Sqlite3|||&quot;EXPERIENCES&quot;" type="WString" />
+            <Field name="EXPERIENCES.LINE_NO" source="File: odbc:DSN=Sqlite3|||&quot;EXPERIENCES&quot;" type="Int32" />
+            <Field name="EXPERIENCES.DESCRIPTION" size="65536" source="File: odbc:DSN=Sqlite3|||&quot;EXPERIENCES&quot;" type="WString" />
+            <Field name="EXPERIENCES.SQL" source="File: odbc:DSN=Sqlite3|||&quot;EXPERIENCES&quot;" type="Bool" />
+            <Field name="EXPERIENCES.ETL" source="File: odbc:DSN=Sqlite3|||&quot;EXPERIENCES&quot;" type="Bool" />
+            <Field name="EXPERIENCES.ANALYST" source="File: odbc:DSN=Sqlite3|||&quot;EXPERIENCES&quot;" type="Bool" />
+            <Field name="EXPERIENCES.ENGINEER" source="File: odbc:DSN=Sqlite3|||&quot;EXPERIENCES&quot;" type="Bool" />
+            <Field name="EXPERIENCES.BI" source="File: odbc:DSN=Sqlite3|||&quot;EXPERIENCES&quot;" type="Bool" />
+            <Field name="EXPERIENCES.SNOWFLAKE" source="File: odbc:DSN=Sqlite3|||&quot;EXPERIENCES&quot;" type="Bool" />
+            <Field name="EXPERIENCES.METHOD" source="File: odbc:DSN=Sqlite3|||&quot;EXPERIENCES&quot;" type="Bool" />
+            <Field name="EXPERIENCES.DEVELOPER" source="File: odbc:DSN=Sqlite3|||&quot;EXPERIENCES&quot;" type="Bool" />
+            <Field name="EXPERIENCES.CLOUD" source="File: odbc:DSN=Sqlite3|||&quot;EXPERIENCES&quot;" type="Bool" />
+            <Field name="EXPERIENCES.ORACLE" source="File: odbc:DSN=Sqlite3|||&quot;EXPERIENCES&quot;" type="Bool" />
+            <Field name="EXPERIENCES.QUICKBASE" source="File: odbc:DSN=Sqlite3|||&quot;EXPERIENCES&quot;" type="Bool" />
+            <Field name="EXPERIENCES.SCHEDULING" source="File: odbc:DSN=Sqlite3|||&quot;EXPERIENCES&quot;" type="Bool" />
+            <Field name="EXPERIENCES.GIT" source="File: odbc:DSN=Sqlite3|||&quot;EXPERIENCES&quot;" type="Bool" />
+            <Field name="EXPERIENCES.LEADERSHIP" source="File: odbc:DSN=Sqlite3|||&quot;EXPERIENCES&quot;" type="Bool" />
+            <Field name="EXPERIENCES.IMAGING_3D" source="File: odbc:DSN=Sqlite3|||&quot;EXPERIENCES&quot;" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="30" width="192" height="132" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Uses SQLite database "greg_roeper"</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="174" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_8712_1e6bc07d44187643b358f0e139e2d76e_\Engine_8712_e3c97d3df3359a49be77073312e44230~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="77" y="329" width="817" height="441" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 16</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="LockInGui.LockInInput.LockInInput">
+            <Position x="102" y="438" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Connection>odbc:DSN=Sqlite3</Connection>
+              <Query>select 'Experiences' as TBL, count(*) as records from EXPERIENCES
+union all
+select 'Tools' as TBL, count(*) as records from tools
+union all
+select 'APPLICATION_HISTORY' as TBL, count(*) as records from APPLICATION_HISTORY
+union all
+select 'Skills' as TBL, count(*) as records from skills
+union all 
+select 'SEARCH_PHRASES' as TBL, count(*) as records from SEARCH_PHRASES</Query>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Experiences</Name>
+              <DefaultAnnotationText>Source=odbc:DSN=Sqlite3
+Query=select 'Experiences' as TBL,...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="LockInEngine.dll" EngineDllEntryPoint="AlteryxLockInInput" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="LockInGui.LockInJoin.LockInJoin">
+            <Position x="426" y="450" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JoinMode>FULL</JoinMode>
+              <JoinFields>
+                <JoinInfo connection="Left">
+                  <Field field="records" />
+                </JoinInfo>
+                <JoinInfo connection="Right">
+                  <Field field="records" />
+                </JoinInfo>
+              </JoinFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Full Outer Join</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="LockInEngine.dll" EngineDllEntryPoint="AlteryxLockInJoin" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="LockInGui.LockInInput.LockInInput">
+            <Position x="102" y="522" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Connection>odbc:DSN=Sqlite3</Connection>
+              <Query>SELECT 'OTHER' as TBL, count(*) as records from DIM_JOB_HISTORY</Query>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source=odbc:DSN=Sqlite3
+Query=SELECT 'OTHER' as TBL, count...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="LockInEngine.dll" EngineDllEntryPoint="AlteryxLockInInput" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="LockInGui.LockInBrowse.LockInBrowse">
+            <Position x="402" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CurrentTempFile>C:\Users\roepe\AppData\Local\Temp\Engine_7988_e8d40e02db27ec40bf395555ddef90d2_\Engine_23940_057a9bf7e2f54fea9e4430f69a1c5b3e_._AlteryxInDBBrowseCache_4b34f846e4a8cd9a61c272b6b53ff1a5.yxdb</CurrentTempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+              <FirstNRecords>100</FirstNRecords>
+              <UseCache value="True" />
+              <DataFromCache>True</DataFromCache>
+              <CacheKey>4b34f846e4a8cd9a61c272b6b53ff1a5</CacheKey>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_23940_._AlteryxInDBBrowseCache_4b34f846e4a8cd9a61c272b6b53ff1a5.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 100 records
+Caching enabled</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="LockInEngine.dll" EngineDllEntryPoint="AlteryxLockInBrowse" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="LockInGui.LockInBrowse.LockInBrowse">
+            <Position x="402" y="654" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CurrentTempFile>C:\Users\roepe\AppData\Local\Temp\Engine_7988_e8d40e02db27ec40bf395555ddef90d2_\Engine_23940_934fd1215dd84751bd28266856e9bb3d_._AlteryxInDBBrowseCache_7bdd363a69e9ad64b6edae92055b97e2.yxdb</CurrentTempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+              <FirstNRecords>100</FirstNRecords>
+              <UseCache value="True" />
+              <DataFromCache>False</DataFromCache>
+              <CacheKey>7bdd363a69e9ad64b6edae92055b97e2</CacheKey>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_23940_._AlteryxInDBBrowseCache_7bdd363a69e9ad64b6edae92055b97e2.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 100 records
+Caching enabled</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="LockInEngine.dll" EngineDllEntryPoint="AlteryxLockInBrowse" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="LockInGui.LockInBrowse.LockInBrowse">
+            <Position x="534" y="450" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CurrentTempFile>C:\Users\roepe\AppData\Local\Temp\Engine_7988_e8d40e02db27ec40bf395555ddef90d2_\Engine_23940_1859b009022c4f7d94633207b01d4f76_._AlteryxInDBBrowseCache_cc2eba94696c31bfdb15324657e662ad.yxdb</CurrentTempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+              <FirstNRecords>100</FirstNRecords>
+              <UseCache value="True" />
+              <DataFromCache>False</DataFromCache>
+              <CacheKey>cc2eba94696c31bfdb15324657e662ad</CacheKey>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_23940_._AlteryxInDBBrowseCache_cc2eba94696c31bfdb15324657e662ad.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 100 records
+Caching enabled</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="LockInEngine.dll" EngineDllEntryPoint="AlteryxLockInBrowse" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="LockInGui.LockInUnion.LockInUnion">
+            <Position x="354" y="402" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>ByName</Mode>
+              <FieldMode>All</FieldMode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="LockInEngine.dll" EngineDllEntryPoint="AlteryxLockInUnion" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="LockInGui.LockInOutput.LockInOutput">
+            <Position x="654" y="378" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormatSpecificOptions />
+              <Table>TRASH</Table>
+              <CreateMode>Overwrite</CreateMode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Table=TRASH</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="LockInEngine.dll" EngineDllEntryPoint="AlteryxLockInOutput" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="LockInGui.LockInDynamicOutput.LockInDynamicOutput">
+            <Position x="726" y="450" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OutputFields>Query
+Connection Name</OutputFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="LockInEngine.dll" EngineDllEntryPoint="AlteryxLockInDynamicOutput" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="810" y="450" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\roepe\AppData\Local\Temp\Engine_7988_e8d40e02db27ec40bf395555ddef90d2_\Engine_7988_fc2412ef41107147b0405837b716a8ed~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>in_database</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="5fd2b41e-b87e-479c-9e39-d40dd65918b0" />
+      <Telemetry>
+        <PreviousWorkflowId value="8608c619-dde7-4984-966c-3867710787e6" />
+        <OriginWorkflowId value="8608c619-dde7-4984-966c-3867710787e6" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
